@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://associations.idf.immo/sitemap.xml

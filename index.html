@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 % de mes honoraires reversés à votre association — associations.idf.immo</title>
+<meta name="description" content="Proposition de partenariat aux associations d'Île-de-France : quand un adhérent vend ou cherche son logement, 10 % des honoraires d'agence hors taxes sont reversés à l'association à la signature de l'acte. Aucun coût, aucune avance, aucun engagement pour l'association. L'adhérent ne paie pas plus.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="associations.idf.immo — Chaque vente d'un adhérent finance votre association">
+<meta property="og:description" content="10 % des honoraires d'agence hors taxes reversés à votre association, à la signature de l'acte. Rien à avancer, rien à gérer, et pas un centime de plus pour l'adhérent. Toute l'Île-de-France.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://associations.idf.immo/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://associations.idf.immo/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316352A'/%3E%3Cpath d='M6 17.5 L16 8.5 L26 17.5' fill='none' stroke='%23E9B183' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='10.6' cy='23' r='2.2' fill='%23F2EFE7'/%3E%3Ccircle cx='16' cy='23' r='2.2' fill='%23F2EFE7'/%3E%3Ccircle cx='21.4' cy='23' r='2.2' fill='%23F2EFE7'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Marie-Céline Etave — associations.idf.immo",
+  "url": "https://associations.idf.immo/",
+  "telephone": "+33660989292",
+  "email": "contact@idf.immo",
+  "areaServed": {"@type": "AdministrativeArea", "name": "Île-de-France"},
+  "description": "Partenariat proposé aux associations loi 1901 d'Île-de-France : lorsqu'un adhérent vend ou recherche son logement personnel, 10 % des honoraires d'agence hors taxes sont reversés à l'association à la signature de l'acte authentique. L'association n'avance rien et ne perçoit rien de ses adhérents ; l'adhérent ne paie aucun surcoût.",
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "description": "Mandat de vente du logement personnel d'un adhérent. Honoraires convenus au mandat, à la charge du vendeur, dus uniquement si la vente se conclut. 10 % de ces honoraires hors taxes sont reversés à l'association de l'adhérent.",
+      "itemOffered": {"@type": "Service", "serviceType": "Vente immobilière"}
+    },
+    {
+      "@type": "Offer",
+      "description": "Mandat de recherche pour un adhérent acquéreur. Honoraires convenus au mandat, dus uniquement si l'acquisition aboutit. 10 % de ces honoraires hors taxes sont reversés à l'association de l'adhérent.",
+      "itemOffered": {"@type": "Service", "serviceType": "Recherche immobilière pour acquéreur"}
+    },
+    {
+      "@type": "Offer",
+      "description": "Expertise en valeur vénale : rapport écrit, daté et motivé, pour une succession, un divorce, une donation ou une déclaration d'IFI. 10 % du montant hors taxes de l'expertise sont reversés à l'association de l'adhérent, même en l'absence de vente.",
+      "itemOffered": {"@type": "Service", "serviceType": "Expertise immobilière en valeur vénale"}
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============ Base ============ */
+:root{
+  --sable:#F3F0E8;      /* fond principal */
+  --craie:#FBFAF6;      /* cartes */
+  --parterre:#E8E3D6;   /* sections alternées */
+  --buis:#2C6049;       /* vert profond */
+  --ombre:#16352A;      /* vert très sombre — héros & pied de page */
+  --brique:#B0602F;     /* accent terracotta */
+  --brique-fonce:#8F4C24;
+  --paille:#E9B183;     /* accent clair sur fonds sombres */
+  --encre:#20302A;
+  --mousse:#5C6D64;     /* texte secondaire */
+  --ligne:#D9D3C4;
+  --or:#1F7A55;         /* vert « ce que reçoit l'association » */
+  --or-clair:#E1F0E8;
+  --texte:#31413A;      /* corps de texte sur fond clair */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:"Inter",system-ui,sans-serif;
+  background:var(--sable);
+  color:var(--encre);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:var(--brique);text-decoration:none}
+a:hover{color:var(--brique-fonce)}
+:focus-visible{outline:2px solid var(--brique);outline-offset:3px;border-radius:2px}
+.container{max-width:1080px;margin-inline:auto;padding-inline:24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--craie);color:var(--encre);padding:.6rem 1rem;z-index:100;border-radius:4px}
+.skip:focus{left:8px}
+
+/* ============ Typographie ============ */
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;line-height:1.14;letter-spacing:-.012em}
+h1{font-size:clamp(2.4rem,5.6vw,4.2rem)}
+h2{font-size:clamp(1.95rem,4vw,2.9rem)}
+h3{font-size:1.35rem;font-weight:600}
+.eyebrow{
+  font-size:.74rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--brique);margin-bottom:1.1rem;
+}
+.lead{font-size:1.08rem;color:var(--mousse);max-width:58ch}
+
+/* ============ Boutons ============ */
+.btn{
+  display:inline-block;font-weight:600;font-size:.95rem;
+  padding:.95rem 1.7rem;border-radius:3px;border:1px solid transparent;
+  transition:background-color .2s ease,color .2s ease,border-color .2s ease;
+  cursor:pointer;
+}
+.btn-solid{background:var(--brique);color:#fff}
+.btn-solid:hover{background:var(--brique-fonce);color:#fff}
+.btn-ghost{border-color:rgba(243,240,232,.5);color:var(--sable)}
+.btn-ghost:hover{border-color:var(--sable);color:#fff}
+
+/* ============ Navigation ============ */
+.nav{position:fixed;inset-inline:0;top:0;z-index:50;transition:background-color .25s ease,box-shadow .25s ease}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:1.05rem}
+.brand{font-family:"Newsreader",serif;font-size:1.28rem;font-weight:600;color:var(--sable);letter-spacing:.01em}
+.brand .dot{color:var(--paille)}
+.nav-links{display:flex;align-items:center;gap:1.55rem;list-style:none}
+.nav-links a{color:rgba(243,240,232,.88);font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:#fff}
+.nav-links .btn{padding:.62rem 1.15rem}
+.nav.scrolled{background:rgba(251,250,246,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--ligne)}
+.nav.scrolled .brand{color:var(--buis)}
+.nav.scrolled .brand .dot{color:var(--brique)}
+.nav.scrolled .nav-links a{color:var(--encre)}
+.nav.scrolled .nav-links a:hover{color:var(--brique)}
+.nav.scrolled .nav-links a.btn-solid{color:#fff}
+@media (max-width:1000px){
+  .nav-inner{flex-direction:column;gap:.45rem;padding-block:.7rem}
+  .nav-links{flex-wrap:wrap;justify-content:center;gap:.35rem 1.1rem}
+  .nav-links a{font-size:.85rem}
+  .nav-links .btn{padding:.5rem .95rem;font-size:.84rem}
+}
+
+/* ============ Héros ============ */
+.hero{
+  position:relative;min-height:94vh;
+  display:flex;align-items:center;
+  background:var(--ombre);color:var(--sable);overflow:hidden;
+  padding:9.5rem 0 6rem;
+}
+/* Trame discrète évoquant un plan — aucune ressource externe. */
+.hero-plan{
+  position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:
+    linear-gradient(rgba(233,177,131,.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(233,177,131,.13) 1px, transparent 1px),
+    linear-gradient(rgba(233,177,131,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(233,177,131,.06) 1px, transparent 1px);
+  background-size:180px 180px,180px 180px,36px 36px,36px 36px;
+}
+.hero-veil{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 18% 12%, rgba(44,96,73,.6) 0%, rgba(22,53,42,0) 65%);
+}
+.hero-inner{position:relative;z-index:2;max-width:820px}
+.hero .eyebrow{color:var(--paille)}
+.hero h1{color:#F7F5EF}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--paille)}
+.hero p.intro{margin:1.6rem 0 2.4rem;max-width:62ch;color:rgba(243,240,232,.86);font-size:1.08rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-sig{margin-top:2.6rem;font-size:.88rem;color:rgba(243,240,232,.62);max-width:58ch}
+.rise{opacity:0;transform:translateY(14px);animation:rise .7s ease forwards}
+.rise.d1{animation-delay:.06s}
+.rise.d2{animation-delay:.18s}
+.rise.d3{animation-delay:.3s}
+.rise.d4{animation-delay:.42s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ============ Bandeau chiffres ============ */
+.strip{background:var(--parterre);border-block:1px solid var(--ligne)}
+.strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;padding-block:2.6rem}
+.strip .gros{font-family:"Newsreader",Georgia,serif;font-size:2.6rem;font-weight:600;color:var(--buis);line-height:1}
+.strip h3{font-size:1.1rem;margin:.5rem 0 .25rem}
+.strip p{font-size:.93rem;color:var(--mousse)}
+@media (max-width:760px){.strip-grid{grid-template-columns:1fr;gap:1.8rem}}
+
+/* ============ Sections ============ */
+.section{padding-block:6rem}
+.section-head{max-width:700px;margin-bottom:3.2rem}
+.section-head p{color:var(--mousse);margin-top:1rem}
+.alt{background:var(--parterre)}
+.prose{max-width:70ch}
+.prose p{color:var(--texte);margin-top:1rem}
+.prose p.fort{font-size:1.12rem;color:var(--encre);font-weight:500}
+
+/* ============ Simulateur ============ */
+.simu{background:var(--craie);border:1px solid var(--ligne);border-radius:6px;padding:2.4rem;margin-top:2.4rem}
+.simu-controls{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1.4rem;align-items:end}
+.simu label{display:block;font-size:.83rem;font-weight:600;margin-bottom:.4rem}
+.simu input[type=range]{width:100%;accent-color:var(--brique)}
+.simu .valeur{font-family:"Newsreader",Georgia,serif;font-size:1.9rem;font-weight:600;color:var(--buis);line-height:1.1;margin-bottom:.3rem}
+.simu select{width:100%;padding:.7rem .8rem;border:1px solid var(--ligne);border-radius:3px;background:#fff;font:inherit;font-size:.95rem;color:var(--encre)}
+.simu-out{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.simu-box{border:1px solid var(--ligne);border-radius:4px;padding:1.3rem 1.4rem;background:var(--sable)}
+.simu-box .t{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mousse);line-height:1.4}
+.simu-box .n{font-family:"Newsreader",Georgia,serif;font-size:1.8rem;font-weight:600;color:var(--encre);line-height:1.15;margin-top:.3rem}
+.simu-box.gain{background:var(--or-clair);border-color:#B6DCC7}
+.simu-box.gain .t{color:var(--or)}
+.simu-box.gain .n{color:var(--or)}
+.simu-box.total{background:var(--buis);border-color:var(--buis)}
+.simu-box.total .t{color:var(--paille)}
+.simu-box.total .n{color:#F7F5EF}
+.simu-note{font-size:.85rem;color:var(--mousse);margin-top:1.4rem;max-width:80ch}
+@media (max-width:900px){.simu-out{grid-template-columns:repeat(2,1fr)}.simu-controls{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.simu{padding:1.6rem}.simu-controls{grid-template-columns:1fr}.simu-out{grid-template-columns:1fr}}
+
+/* ============ Offres ============ */
+.offres{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.offre{background:var(--craie);border:1px solid var(--ligne);border-radius:4px;padding:2rem 1.9rem;display:flex;flex-direction:column}
+.offre.accent{border-color:var(--brique);box-shadow:0 0 0 1px var(--brique)}
+.offre h3{margin:0 0 .6rem}
+.offre p{font-size:.95rem;color:var(--texte)}
+.offre ul{list-style:none;margin-top:1.1rem}
+.offre li{font-size:.88rem;color:var(--mousse);padding-left:1.1rem;position:relative;margin-top:.4rem}
+.offre li::before{content:"";position:absolute;left:0;top:.52em;width:6px;height:6px;border:1.5px solid var(--brique);transform:rotate(45deg)}
+.offre .pied{margin-top:auto;padding-top:1.3rem;font-size:.85rem;color:var(--mousse)}
+@media (max-width:900px){.offres{grid-template-columns:1fr}}
+
+/* Bloc sombre « aucun surcoût » */
+.transparence{background:var(--ombre);color:#F7F5EF;border-radius:6px;padding:2.1rem 2.2rem;margin-top:2.4rem}
+.transparence h3{color:#fff;font-size:1.5rem;margin-bottom:.7rem;font-weight:500}
+.transparence p{color:rgba(243,240,232,.86);font-size:.99rem;margin-top:.7rem}
+.transparence ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:.45rem 2rem;margin-top:1.4rem}
+.transparence li{position:relative;padding-left:1.7rem;font-size:.95rem;color:rgba(243,240,232,.92)}
+.transparence li::before{content:"×";position:absolute;left:0;top:-.12rem;font-size:1.25rem;font-weight:700;color:var(--paille)}
+@media (max-width:700px){.transparence{padding:1.6rem}.transparence ul{grid-template-columns:1fr}}
+
+/* Barre expertise */
+.expertise-bar{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2rem;background:var(--craie);border:1px solid var(--ligne);border-left:3px solid var(--brique);border-radius:4px;padding:1.7rem 2rem;margin-top:1.4rem}
+.expertise-bar h3{font-size:1.2rem;width:200px;flex:0 0 auto;color:var(--buis)}
+.expertise-bar .corps{flex:1;min-width:280px}
+.expertise-bar p{font-size:.96rem;color:var(--texte)}
+.expertise-bar p + p{margin-top:.8rem}
+@media (max-width:700px){.expertise-bar{padding:1.5rem}.expertise-bar h3{width:auto}}
+
+/* ============ Deux colonnes « fait / ne fait pas » ============ */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2.4rem}
+.duo .bloc{background:var(--craie);border:1px solid var(--ligne);border-radius:4px;padding:2rem}
+.duo h3{font-size:1.25rem;margin-bottom:1rem}
+.duo ul{list-style:none}
+.duo li{position:relative;padding-left:1.9rem;margin-top:.7rem;font-size:.96rem;color:var(--texte)}
+.duo li::before{position:absolute;left:0;top:0;font-weight:700}
+.duo .oui li::before{content:"✓";color:var(--or)}
+.duo .non li::before{content:"×";color:var(--mousse);font-size:1.15em;line-height:1.4}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+
+/* ============ Étapes ============ */
+.steps{list-style:none;counter-reset:etape;padding:0;margin:0;max-width:78ch}
+.steps li{counter-increment:etape;position:relative;padding:0 0 1.7rem 3.2rem;border-left:2px solid var(--ligne);margin-left:1.1rem}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{content:counter(etape);position:absolute;left:-1.1rem;top:-.15rem;width:2.2rem;height:2.2rem;background:var(--brique);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem}
+.steps h3{font-size:1.12rem;margin-bottom:.2rem}
+.steps p{font-size:.95rem;color:var(--texte)}
+
+/* ============ Types d'associations ============ */
+.types{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;list-style:none;padding:0;margin-top:2rem}
+.types li{background:var(--craie);border:1px solid var(--ligne);border-radius:4px;padding:1.2rem 1.3rem}
+.types b{display:block;font-family:"Newsreader",Georgia,serif;font-size:1.08rem;font-weight:600;color:var(--buis);margin-bottom:.25rem}
+.types span{font-size:.89rem;color:var(--texte)}
+@media (max-width:900px){.types{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.types{grid-template-columns:1fr}}
+
+/* ============ Bande ============ */
+.band{background:var(--buis);color:var(--sable);padding-block:5rem;position:relative;overflow:hidden}
+.band::before,.band::after{content:"";position:absolute;top:0;bottom:0;width:1px;background:rgba(243,240,232,.18)}
+.band::before{left:10%}
+.band::after{right:10%}
+.band .eyebrow{color:var(--paille)}
+.band h2{color:#F7F5EF}
+.band p{margin-top:1.2rem;max-width:64ch;color:rgba(243,240,232,.86)}
+.band .hero-cta{margin-top:2rem}
+
+/* ============ Adhérent ============ */
+.adherent{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;list-style:none;padding:0;margin-top:2rem}
+.adherent li{background:var(--craie);border:1px solid var(--ligne);border-radius:4px;padding:1.3rem}
+.adherent b{display:block;font-family:"Newsreader",Georgia,serif;font-size:1.1rem;font-weight:600;color:var(--buis);margin-bottom:.3rem}
+.adherent span{font-size:.9rem;color:var(--texte)}
+@media (max-width:900px){.adherent{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.adherent{grid-template-columns:1fr}}
+
+/* ============ FAQ ============ */
+.faq{max-width:80ch;margin-top:1rem}
+.faq details{background:var(--craie);border:1px solid var(--ligne);border-radius:4px;padding:1.1rem 1.4rem;margin-top:.8rem}
+.faq details[open]{border-color:var(--brique)}
+.faq summary{font-weight:600;cursor:pointer;list-style:none;position:relative;padding-right:2rem;color:var(--encre)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:-.1rem;font-size:1.4rem;font-weight:400;color:var(--brique);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{font-size:.96rem;color:var(--texte);margin-top:.8rem}
+
+/* ============ À propos ============ */
+.apropos{display:grid;grid-template-columns:300px 1fr;gap:4rem;align-items:center}
+.portrait{aspect-ratio:4/5;background:var(--buis);border-radius:4px;display:flex;align-items:center;justify-content:center;position:relative}
+.portrait::before{content:"";position:absolute;inset:14px;border:1px solid rgba(243,240,232,.35);border-radius:2px}
+.monogram{font-family:"Newsreader",serif;font-size:3.8rem;font-weight:500;color:var(--paille);font-style:italic}
+.apropos-txt h2{margin-bottom:1.2rem}
+.apropos-txt p{color:var(--texte);margin-bottom:1rem;max-width:58ch}
+.creds{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0 1.4rem;padding:0}
+.creds li{font-size:.82rem;font-weight:600;color:var(--buis);background:var(--parterre);border:1px solid var(--ligne);border-radius:99px;padding:.32rem .8rem}
+@media (max-width:860px){.apropos{grid-template-columns:1fr;gap:2.5rem}.portrait{max-width:260px}}
+
+/* ============ Contact ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:4rem;align-items:start}
+.info-item{margin-bottom:1.7rem}
+.info-item .label{font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mousse);margin-bottom:.25rem}
+.info-item .value{font-family:"Newsreader",serif;font-size:1.22rem;font-weight:500;color:var(--encre)}
+.info-item a.value:hover{color:var(--brique)}
+form{background:var(--craie);border:1px solid var(--ligne);border-radius:4px;padding:2.2rem}
+.field{margin-bottom:1.2rem}
+.field label{display:block;font-size:.83rem;font-weight:600;margin-bottom:.35rem}
+.field input,.field select,.field textarea{
+  width:100%;padding:.78rem .9rem;border:1px solid var(--ligne);border-radius:3px;
+  background:#fff;font:inherit;font-size:.95rem;color:var(--encre);
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--brique);outline-offset:1px;border-color:transparent}
+.field textarea{min-height:110px;resize:vertical}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-note{font-size:.8rem;color:var(--mousse);margin-top:.9rem}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}.grid2{grid-template-columns:1fr}}
+
+/* ============ Pied de page ============ */
+footer{background:var(--ombre);color:rgba(243,240,232,.75);padding-block:3.5rem 2.2rem;font-size:.9rem}
+.foot-top{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start;margin-bottom:2.5rem}
+.foot-top .brand{font-size:1.4rem}
+.foot-nav{display:flex;gap:1.6rem;list-style:none;flex-wrap:wrap;max-width:560px}
+.foot-nav a{color:rgba(243,240,232,.75)}
+.foot-nav a:hover{color:#fff}
+.legal{border-top:1px solid rgba(243,240,232,.18);padding-top:1.6rem;font-size:.8rem;line-height:1.9;color:rgba(243,240,232,.55)}
+.legal a{color:inherit;text-decoration:underline}
+
+/* ============ Révélation au défilement ============ */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<a class="skip" href="#pourquoi">Aller au contenu</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#haut">associations<span class="dot">.</span>idf<span class="dot">.</span>immo</a>
+    <ul class="nav-links" id="menu">
+      <li><a href="#pourquoi">Pourquoi</a></li>
+      <li><a href="#principe">Le principe</a></li>
+      <li><a href="#calcul">Ce que ça rapporte</a></li>
+      <li><a href="#adherents">Vos adhérents</a></li>
+      <li><a href="#cadre">Le cadre</a></li>
+      <li><a href="#questions">Questions</a></li>
+      <li><a href="#partenariat" class="btn btn-solid">Devenir partenaire</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ================= HÉROS ================= -->
+<section class="hero" id="haut">
+  <div class="hero-plan" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <p class="eyebrow rise d1">Associations loi 1901 · Île-de-France</p>
+      <h1 class="rise d2">Un adhérent vend son logement. <em>Votre association reçoit 10 %</em> de mes honoraires.</h1>
+      <p class="intro rise d3">Dans votre association, des adhérents vendront leur logement cette année, et d'autres en chercheront un. Tous paieront des honoraires d'agence — à quelqu'un. Je vous propose que ce soit à moi, et que <strong>10 % de ces honoraires, hors taxes, reviennent à votre association</strong> le jour de la signature chez le notaire. L'adhérent ne paie pas un centime de plus. L'association n'avance rien, ne gère rien, et reste libre à tout moment.</p>
+      <div class="hero-cta rise d4">
+        <a class="btn btn-solid" href="#partenariat">Devenir association partenaire</a>
+        <a class="btn btn-ghost" href="#calcul">Voir ce que ça rapporte</a>
+      </div>
+      <p class="hero-sig rise d4">Marie-Céline Etave, conseillère en immobilier indépendante depuis plus de 15 ans et expert en valeur vénale. Une seule interlocutrice, jointe directement par vos adhérents, sur les huit départements franciliens.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHIFFRES CLÉS ================= -->
+<div class="strip">
+  <div class="container strip-grid">
+    <div class="reveal">
+      <p class="gros">10 %</p>
+      <h3>des honoraires, hors taxes</h3>
+      <p>Reversés à votre association sur chaque opération conclue par un adhérent : une vente, une recherche, ou une expertise en valeur vénale.</p>
+    </div>
+    <div class="reveal">
+      <p class="gros">0 €</p>
+      <h3>pour votre association</h3>
+      <p>Aucune avance de trésorerie, aucune cotisation, aucun budget engagé, aucun risque financier.</p>
+    </div>
+    <div class="reveal">
+      <p class="gros">0 h</p>
+      <h3>de bénévolat mobilisé</h3>
+      <p>Pas de stand à tenir, pas de caisse à compter, pas d'adhérent à solliciter. Une information à diffuser, et c'est tout.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= POURQUOI ================= -->
+<section class="section" id="pourquoi">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Pourquoi cette proposition</p>
+      <h2>Une ressource qui ne prend le temps de personne</h2>
+    </div>
+    <div class="prose reveal">
+      <p class="fort">Vous connaissez le calcul par cœur. Un loto, c'est six semaines de préparation, des lots à démarcher un par un, quinze bénévoles mobilisés un samedi entier — et, si tout se passe bien, quelques centaines d'euros dans la caisse.</p>
+      <p>La tombola, le vide-grenier, la vente de gâteaux à la sortie de l'école, la course aux sponsors : ces actions font vivre les associations depuis toujours et elles ont une vraie valeur, parce qu'elles rassemblent. Mais elles reposent toutes sur la même ressource, la seule dont vous ne disposez pas en abondance : <strong>le temps de vos bénévoles</strong>. Et lorsque les subventions se resserrent, c'est toujours aux mêmes personnes qu'on en demande un peu plus.</p>
+      <p>Ce que je vous propose ne consomme pas une heure de bénévolat. Une seule vente d'adhérent dans l'année peut rapporter à votre association davantage qu'un loto entier — sans qu'aucun membre du bureau n'ait eu à organiser quoi que ce soit.</p>
+      <p class="fort">Et le point essentiel est celui-ci : cet argent n'est pris à personne.</p>
+      <p>Un adhérent qui vend son appartement paiera des honoraires d'agence de toute façon, quelle que soit l'agence qu'il choisit. La seule chose qui change, c'est leur destination. Aujourd'hui, ils partent intégralement dans les frais de structure et de publicité d'un réseau. Demain, une part revient à l'association dont il est membre — celle où son fils joue au basket, celle qui organise le festival de son quartier, celle qui aide ses voisins. Il n'aura rien payé de plus, et il aura financé ce à quoi il tient.</p>
+      <p>C'est aussi, pour lui, un moment où l'on se sent seul. Un adhérent qui vend sans être accompagné se trompe souvent de prix : trop haut, le bien s'use sur le marché et finit par se brader ; trop bas, il perd sans jamais le savoir. Ce que l'association lui apporte ici, ce n'est donc pas seulement un geste pour la caisse commune : c'est <strong>une professionnelle identifiée, jointe directement, qui répond</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LE PRINCIPE ================= -->
+<section class="section alt" id="principe">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Le principe</p>
+      <h2>Trois temps, et rien de plus</h2>
+      <p>Il n'y a ni plateforme à ouvrir, ni compte à créer, ni dossier à instruire. Le mécanisme tient en trois phrases. Une précision d'emblée : il s'agit du <strong>bien immobilier personnel de vos adhérents</strong> — la résidence principale qu'ils quittent, la maison de famille dont ils héritent, le studio qu'ils cherchent pour leur fille — et non du patrimoine de l'association, qui n'est pas concerné.</p>
+    </div>
+    <ol class="steps reveal">
+      <li>
+        <h3>Votre association informe ses adhérents</h3>
+        <p>Vous annoncez à vos membres qu'ils disposent désormais d'une conseillère immobilière partenaire, et que chaque projet mené avec elle rapporte à l'association. Je fournis le texte prêt à publier, l'affiche et l'encart pour votre lettre d'information, votre site ou votre groupe de discussion. Vous n'avez rien à rédiger.</p>
+      </li>
+      <li>
+        <h3>Un adhérent me confie son projet</h3>
+        <p>Il vend son logement, il en cherche un, ou il a besoin d'une expertise en valeur vénale pour une succession ou un divorce. Il me contacte directement, au moment où il en a besoin, et signe avec moi un mandat de vente, un mandat de recherche ou une lettre de mission. L'association n'intervient à aucun moment : elle ne transmet aucun nom, ne suit aucun dossier, ne signe rien à sa place.</p>
+      </li>
+      <li>
+        <h3>L'opération est conclue, l'association reçoit</h3>
+        <p>À la signature de l'acte authentique chez le notaire — et seulement à ce moment-là — je reverse à votre association <strong>10 % de mes honoraires hors taxes</strong>. Pour une expertise en valeur vénale, c'est identique : le versement intervient une fois le rapport remis et réglé, même si aucune vente n'a lieu. Un virement, un justificatif pour votre trésorier, et l'opération est close. Si la vente ne se fait pas, personne ne doit rien à personne.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= SIMULATEUR ================= -->
+<section class="section" id="calcul">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Ce que ça rapporte</p>
+      <h2>Mettez vos propres chiffres</h2>
+      <p>Prenez un prix de vente représentatif de votre secteur, le taux d'honoraires qui figurera au mandat, et le nombre d'adhérents susceptibles de déménager dans l'année. Le calcul se fait dans votre navigateur : rien n'est envoyé ni conservé.</p>
+    </div>
+    <div class="simu reveal">
+      <div class="simu-controls">
+        <div>
+          <label for="prix">Prix de vente du bien</label>
+          <p class="valeur" id="prix-val">400 000 €</p>
+          <input type="range" id="prix" min="100000" max="1200000" step="10000" value="400000">
+        </div>
+        <div>
+          <label for="taux">Honoraires d'agence prévus au mandat (TTC)</label>
+          <select id="taux">
+            <option value="3">3 % du prix</option>
+            <option value="4" selected>4 % du prix</option>
+            <option value="5">5 % du prix</option>
+            <option value="6">6 % du prix</option>
+            <option value="7">7 % du prix</option>
+          </select>
+        </div>
+        <div>
+          <label for="ventes">Projets d'adhérents dans l'année</label>
+          <p class="valeur" id="ventes-val">3</p>
+          <input type="range" id="ventes" min="1" max="10" step="1" value="3">
+        </div>
+      </div>
+      <div class="simu-out" aria-live="polite">
+        <div class="simu-box">
+          <p class="t">Honoraires d'agence (TTC)</p>
+          <p class="n" id="out-ttc">16 000 €</p>
+        </div>
+        <div class="simu-box">
+          <p class="t">Base hors taxes</p>
+          <p class="n" id="out-ht">13 333 €</p>
+        </div>
+        <div class="simu-box gain">
+          <p class="t">Reversé à l'association<br>par projet</p>
+          <p class="n" id="out-don">1 333 €</p>
+        </div>
+        <div class="simu-box total">
+          <p class="t">Sur l'année</p>
+          <p class="n" id="out-annee">4 000 €</p>
+        </div>
+      </div>
+      <p class="simu-note">Calcul indicatif, donné à titre d'illustration et sans valeur contractuelle. Les honoraires d'agence sont annoncés toutes taxes comprises ; le reversement porte sur leur montant <strong>hors taxes</strong> (TVA à 20 %). Le taux d'honoraires est celui convenu au mandat signé avec l'adhérent : vous le choisissez librement ici pour simuler, je n'avance aucun « taux moyen du marché » que je ne pourrais pas démontrer. Un seul élément est ferme, et il est écrit dans la convention : <strong>10 % de mes honoraires hors taxes, versés à l'association à la signature de l'acte</strong>.</p>
+    </div>
+
+    <div class="transparence reveal">
+      <h3>Votre adhérent ne paie pas un centime de plus.</h3>
+      <p>C'est la première question posée en réunion de bureau, et la réponse est nette : le reversement est prélevé <strong>sur mes honoraires</strong>, il ne s'ajoute pas à ceux de l'adhérent. Celui-ci paie ce qu'il aurait payé ailleurs, il bénéficie d'un accompagnement complet du premier rendez-vous à la signature, et il a en plus la satisfaction de savoir que son déménagement a financé l'association à laquelle il tient.</p>
+      <p>C'est aussi ce qui rend la proposition simple à présenter à vos adhérents : vous ne leur demandez rien. Ni argent, ni temps, ni engagement. Vous leur signalez seulement que, s'ils ont un projet immobilier, il existe une manière de le mener qui rapporte à leur association.</p>
+      <ul>
+        <li>Aucun surcoût pour l'adhérent</li>
+        <li>Aucune majoration d'honoraires</li>
+        <li>Aucune avance de trésorerie par l'association</li>
+        <li>Aucun frais si l'opération ne se fait pas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VOS ADHÉRENTS ================= -->
+<section class="section alt" id="adherents">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Côté adhérent</p>
+      <h2>Ce que vos adhérents reçoivent</h2>
+      <p>Une association n'engage jamais que sa réputation lorsqu'elle recommande quelqu'un. C'est pourquoi ce qui suit compte au moins autant que le reversement : vos adhérents doivent vous remercier de la mise en relation.</p>
+    </div>
+    <div class="offres">
+      <article class="offre accent reveal">
+        <h3>Le mandat de vente</h3>
+        <p>Pour l'adhérent qui vend son logement. Il me confie un mandat, et à partir de là tout est piloté : estimation argumentée, conseils de mise en valeur, photos, diffusion sur les grands portails, visites qualifiées — je ne fais pas défiler des curieux chez lui —, négociation, puis suivi du dossier jusqu'à la signature chez le notaire.</p>
+        <ul>
+          <li>Estimation offerte, avant toute signature de mandat</li>
+          <li>Compte-rendu après chaque visite</li>
+          <li>Honoraires annoncés dès le premier rendez-vous et inscrits au mandat</li>
+          <li>Rien à payer si le bien ne se vend pas</li>
+        </ul>
+        <p class="pied">Honoraires à la charge du vendeur, dus le jour de la signature de l'acte authentique. C'est ce jour-là que l'association est créditée.</p>
+      </article>
+      <article class="offre accent reveal">
+        <h3>Le mandat de recherche</h3>
+        <p>C'est le contrat que peu de gens connaissent, et c'est le plus utile pour un acheteur. Dans une vente ordinaire, l'agent immobilier est mandaté par le vendeur : c'est le prix du vendeur qu'il défend. Avec un mandat de recherche, votre adhérent a enfin <strong>quelqu'un de son côté de la table</strong> : je cherche à sa place, y compris des biens qui ne sont pas encore en annonce, je l'accompagne en visite, je lui signale ce qu'il n'aurait pas vu, et je négocie dans son intérêt.</p>
+        <ul>
+          <li>Recherche personnalisée, y compris hors annonces</li>
+          <li>Visites accompagnées et avis franc sur chaque bien</li>
+          <li>Négociation menée pour lui, pas contre lui</li>
+          <li>Honoraires dus uniquement si l'acquisition aboutit</li>
+        </ul>
+        <p class="pied">Le reversement à l'association fonctionne à l'identique : un adhérent qui achète la finance autant qu'un adhérent qui vend.</p>
+      </article>
+    </div>
+
+    <div class="expertise-bar reveal">
+      <h3>Troisième volet :<br>l'expertise en valeur vénale</h3>
+      <div class="corps">
+      <p>Une succession à partager entre héritiers, un divorce à liquider, une donation à préparer, un bien à déclarer à l'IFI : dans ces situations, une estimation ne suffit pas. Il faut un rapport écrit, daté et motivé. Je suis <strong>expert immobilier en valeur vénale</strong> et vos adhérents peuvent me solliciter à ce titre — ce sont souvent les moments où l'on se sent le plus démuni face à des chiffres qu'on ne sait pas contester. Tarif communiqué sur demande.</p>
+      <p><strong>L'expertise ouvre le même droit que la vente et la recherche</strong> : 10 % de son montant hors taxes est reversé à l'association. C'est un point qui compte, parce qu'une succession ou une séparation ne débouche pas toujours sur une vente — l'adhérent peut n'avoir besoin que du rapport. Votre association est créditée quand même.</p>
+      </div>
+    </div>
+
+    <ul class="adherent">
+      <li class="reveal"><b>Une interlocutrice unique</b><span>La même personne du premier appel à la signature. Pas de standard, pas de dossier qui change de mains.</span></li>
+      <li class="reveal"><b>Un prix juste, argumenté</b><span>Une estimation appuyée sur les ventes réellement constatées dans le secteur — pas sur une promesse faite pour obtenir le mandat.</span></li>
+      <li class="reveal"><b>Des rendez-vous compatibles</b><span>Soirées et week-ends : personne n'a à poser des congés pour vendre ou pour visiter.</span></li>
+      <li class="reveal"><b>De la franchise</b><span>Ce qui va freiner la vente lui est dit d'emblée, et ce qui cloche dans un bien qu'il visite aussi.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= RÔLE DE L'ASSOCIATION ================= -->
+<section class="section" id="role">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Rôle de l'association</p>
+      <h2>Ce que vous avez à faire — et ce que vous n'avez pas à faire</h2>
+      <p>La première question d'un bureau n'est pas « combien ça rapporte », mais « qu'est-ce que ça nous engage ». Réponse : presque rien, et cela mérite d'être détaillé.</p>
+    </div>
+    <div class="duo">
+      <div class="bloc oui reveal">
+        <h3>Ce que fait l'association</h3>
+        <ul>
+          <li>Un échange de vingt minutes, en visio ou sur place, avec le bureau ou la personne que vous désignez, pour vérifier que la proposition a du sens chez vous.</li>
+          <li>La signature d'une convention de partenariat d'une page, que votre trésorier peut relire tranquillement.</li>
+          <li>La diffusion d'une information à ses adhérents, au rythme qui lui convient : lettre, site, panneau d'affichage, groupe de discussion, mot en assemblée générale.</li>
+          <li>C'est tout. Les adhérents me contactent ensuite eux-mêmes, s'ils le souhaitent.</li>
+        </ul>
+      </div>
+      <div class="bloc non reveal">
+        <h3>Ce que l'association n'a pas à faire</h3>
+        <ul>
+          <li>Aucun budget à engager, aucune avance de trésorerie, aucun achat, aucune cotisation.</li>
+          <li>Aucune intervention dans la transaction : l'association ne vend rien, ne négocie rien, ne conseille personne et n'est à aucun moment intermédiaire.</li>
+          <li>Aucun fichier d'adhérents à me transmettre. Je ne reçois ni liste, ni coordonnée : ce sont vos adhérents qui viennent, quand ils le décident.</li>
+          <li>Aucune exclusivité, aucune durée d'engagement, aucun volume à atteindre. La convention s'arrête quand vous le souhaitez, sans formalité ni indemnité.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LE CADRE ================= -->
+<section class="section alt" id="cadre">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Le cadre</p>
+      <h2>Ce que votre trésorier voudra savoir</h2>
+      <p>Une ressource nouvelle dans les comptes d'une association, cela se justifie en assemblée générale. Autant que tout soit clair dès le départ.</p>
+    </div>
+    <div class="prose reveal">
+      <p><strong>Qui verse, et quand.</strong> Le reversement est effectué par moi, sur des honoraires que j'ai déjà encaissés, après la signature de l'acte authentique — ou, pour une expertise en valeur vénale, après la remise et le règlement du rapport. Il ne transite jamais par l'adhérent, et l'association n'a rien à facturer à qui que ce soit. Ni au compromis, ni à la signature du mandat : uniquement lorsque l'opération est définitivement conclue.</p>
+      <p><strong>Ce que dit la convention.</strong> Une convention de partenariat écrite fixe le principe, le taux — 10 % des honoraires hors taxes, sur les trois volets : vente, recherche et expertise —, le moment du versement et la liberté de chacune des parties d'y mettre fin. Elle tient en une page, ne comporte ni clause d'exclusivité, ni engagement de volume, ni durée minimale.</p>
+      <p><strong>Ce que vous recevez comme justificatif.</strong> Pour chaque versement, un document indiquant la date de l'acte, la base retenue et le calcul appliqué, afin que votre trésorerie et votre rapport d'activité puissent en rendre compte sans ambiguïté. J'adapte la forme de ce justificatif à ce que votre comptabilité attend.</p>
+      <p><strong>Un point d'honnêteté, enfin.</strong> Le traitement comptable et fiscal d'une ressource de ce type dépend de la situation propre de chaque association — de son objet, de son régime et de ses autres activités. Je vous invite à le faire valider par votre expert-comptable, votre commissaire aux comptes ou votre fédération avant de signer. Je préfère vous le dire d'emblée plutôt que vous laisser le découvrir : une proposition qui vous mettrait en difficulté ne m'intéresse pas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POUR QUELLES ASSOCIATIONS ================= -->
+<section class="section" id="qui">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Pour qui</p>
+      <h2>Quelle que soit votre taille</h2>
+      <p>Le critère n'est pas le nombre d'adhérents. Une association de soixante familles dont deux membres déménagent dans l'année reçoit exactement autant qu'un club de huit cents personnes dont deux membres déménagent. Ne vous excluez pas parce que vous vous trouvez petits.</p>
+    </div>
+    <ul class="types">
+      <li class="reveal"><b>Clubs sportifs</b><span>Football, basket, judo, tennis, gymnastique, athlétisme, sections omnisports et leurs parents accompagnateurs.</span></li>
+      <li class="reveal"><b>Associations culturelles</b><span>Écoles de musique, troupes de théâtre, chorales, ateliers d'arts plastiques, ciné-clubs, associations de lecture.</span></li>
+      <li class="reveal"><b>Parents d'élèves</b><span>Associations de parents d'école, de collège et de lycée, coopératives et associations périscolaires.</span></li>
+      <li class="reveal"><b>Anciens élèves et réseaux</b><span>Associations d'anciens élèves, amicales de promotion, réseaux professionnels et d'entraide.</span></li>
+      <li class="reveal"><b>Amicales et comités des fêtes</b><span>Amicales de quartier, de locataires, de personnel, comités des fêtes et associations de riverains.</span></li>
+      <li class="reveal"><b>Associations caritatives et sociales</b><span>Aide alimentaire, accompagnement des familles, soutien scolaire, aide aux personnes âgées ou en situation de handicap.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= BANDE : VENIR EN PARLER ================= -->
+<section class="band">
+  <div class="container reveal">
+    <p class="eyebrow">Sur simple demande</p>
+    <h2>Je peux venir vous en parler</h2>
+    <p>À une réunion de bureau, à votre assemblée générale, ou sur votre stand au forum des associations de la rentrée : je me déplace pour présenter la proposition et répondre aux questions, les vôtres comme celles de vos adhérents. C'est souvent là que les projets se déclenchent, parce que les gens osent poser des questions qu'ils ne poseraient jamais en poussant la porte d'une agence — sur une succession en cours, une séparation, un bien dont on ne sait pas quoi faire.</p>
+    <p>Ces interventions sont gratuites et sans contrepartie : que la convention soit signée ou non, personne ne vous facturera un déplacement.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#partenariat">Fixer un premier échange</a>
+      <a class="btn btn-ghost" href="#questions">Lire les questions fréquentes</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MISE EN PLACE ================= -->
+<section class="section" id="mise-en-place">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Mise en place</p>
+      <h2>Opérationnel en une semaine</h2>
+    </div>
+    <ol class="steps reveal">
+      <li>
+        <h3>Un premier échange</h3>
+        <p>Vingt minutes, par téléphone, en visio ou autour d'une table, avec le bureau ou la personne que vous désignez. Je présente la proposition, vous posez vos questions — en particulier celles qui portent sur ce qui vous engage.</p>
+      </li>
+      <li>
+        <h3>La convention de partenariat</h3>
+        <p>Une page, que je vous adresse par écrit : le taux de 10 % des honoraires hors taxes, le moment du versement, la nature du justificatif, et la liberté d'y mettre fin quand vous le voulez. Votre trésorier la relit, votre bureau la valide, vous signez.</p>
+      </li>
+      <li>
+        <h3>Les supports de communication</h3>
+        <p>Je vous remets un texte prêt à publier, une affiche A4 pour votre panneau et un encart court pour votre lettre d'information, votre site ou votre groupe de discussion. Vous n'avez rien à rédiger ni à mettre en page.</p>
+      </li>
+      <li>
+        <h3>Vos adhérents me contactent</h3>
+        <p>Directement, par téléphone ou par e-mail, au moment où ils en ont besoin. L'association n'intervient plus, et n'a plus rien à suivre. À chaque acte signé, elle est créditée et reçoit son justificatif.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= L'INTERLOCUTRICE ================= -->
+<section class="section alt" id="interlocutrice">
+  <div class="container apropos">
+    <!-- Remplacer ce bloc par une photo : <img src="photo.jpg" alt="Marie-Céline Etave"> -->
+    <div class="portrait reveal" role="img" aria-label="Monogramme de Marie-Céline Etave">
+      <span class="monogram">MCE</span>
+    </div>
+    <div class="apropos-txt reveal">
+      <p class="eyebrow">Votre interlocutrice</p>
+      <h2>Marie-Céline Etave</h2>
+      <p>Conseillère en immobilier indépendante depuis <strong>plus de 15 ans</strong> et <strong>expert immobilier en valeur vénale</strong>, j'accompagne des particuliers en Île-de-France — et non des investisseurs ou des marchands de biens. Ce sont les projets de gens qui déménagent, s'agrandissent, se séparent ou héritent.</p>
+      <p>Si je reverse 10 % de mes honoraires aux associations, ce n'est pas de la générosité : c'est un choix économique assumé. Travailler avec des adhérents qui viennent recommandés par leur association m'évite l'essentiel des frais de prospection et de publicité d'une agence classique. Cette économie, je préfère la rendre à ceux qui me l'ont fait faire plutôt que la dépenser en annonces.</p>
+      <p>En échange, je m'engage sur une chose simple : chaque adhérent que vous m'adressez est traité comme un client, pas comme un dossier à volume. Si un projet n'est pas mûr, ou si un prix n'est pas tenable, je le dis — quitte à ce qu'il n'y ait ni vente, ni reversement. Une association qui recommande quelqu'un met sa réputation en jeu ; la mienne dépend de la vôtre.</p>
+      <ul class="creds">
+        <li>15+ ans d'expérience</li>
+        <li>Expert en valeur vénale</li>
+        <li>Indépendante</li>
+        <li>Toute l'Île-de-France</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUESTIONS ================= -->
+<section class="section" id="questions">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>Ce que demandent les bureaux</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>Est-ce que cela coûte quelque chose à l'association ?</summary>
+        <p>Non, rien, à aucun moment. Il n'y a ni droit d'entrée, ni cotisation, ni abonnement, ni avance de trésorerie. L'association ne peut pas perdre d'argent dans cette opération : dans le pire des cas — aucun adhérent n'ayant de projet immobilier cette année — elle n'aura simplement rien reçu, et n'aura rien dépensé pour cela.</p>
+      </details>
+      <details>
+        <summary>Est-ce que l'adhérent paie plus cher qu'ailleurs ?</summary>
+        <p>Non. C'est le point sur lequel je suis la plus ferme, parce que ce serait un marché de dupes. Le reversement est prélevé sur <strong>mes</strong> honoraires : il ne s'ajoute pas à ceux de l'adhérent, et le taux inscrit à son mandat n'est pas majoré du fait qu'il vient de votre association. Il paie ce qu'il aurait payé ailleurs, et une part de cette somme revient à son association au lieu de partir en frais de structure.</p>
+      </details>
+      <details>
+        <summary>De quels biens parle-t-on exactement ?</summary>
+        <p>Du <strong>bien immobilier personnel de vos adhérents</strong>, uniquement : l'appartement qu'ils vendent pour s'agrandir, la maison de famille reçue en héritage, le bien qu'ils mettent en vente après une séparation, ou le logement qu'ils cherchent pour eux ou pour leur enfant étudiant. Ce sont des particuliers, pas des investisseurs. Le patrimoine de l'association elle-même — vos locaux, votre siège — n'entre pas dans ce dispositif, et vos adhérents ne mélangent donc jamais leurs affaires privées avec la vie de l'association.</p>
+      </details>
+      <details>
+        <summary>Faut-il vous transmettre la liste de nos adhérents ?</summary>
+        <p>Jamais, et je ne l'accepterais pas. Aucun fichier ne m'est communiqué, aucune coordonnée ne m'est transmise, et je ne démarche personne. L'association diffuse une information générale ; les adhérents qui ont un projet me contactent d'eux-mêmes. C'est la seule manière de faire qui soit à la fois respectueuse de vos membres et conforme à ce qu'ils attendent de vous.</p>
+      </details>
+      <details>
+        <summary>À quel moment exact l'association est-elle payée ?</summary>
+        <p>À la signature de l'acte authentique chez le notaire, une fois mes honoraires encaissés. Ni à la signature du mandat, ni au compromis de vente : uniquement lorsque l'opération est définitivement conclue. Un compromis peut ne pas aboutir — refus de prêt, condition suspensive non levée — et il serait malhonnête d'annoncer une somme à votre trésorier avant d'en être certaine.</p>
+      </details>
+      <details>
+        <summary>Sur quelle base les 10 % sont-ils calculés ?</summary>
+        <p>Sur les honoraires d'agence <strong>hors taxes</strong> de l'opération. Les honoraires sont annoncés au public toutes taxes comprises ; on en retire la TVA, et le reversement porte sur le montant restant. La règle est la même pour les trois volets — mandat de vente, mandat de recherche et expertise en valeur vénale. Le simulateur plus haut détaille chaque étape du calcul, et le justificatif que reçoit votre trésorier reprend exactement les mêmes lignes : il n'y a rien à reconstituer de votre côté.</p>
+      </details>
+      <details>
+        <summary>L'expertise en valeur vénale rapporte-t-elle aussi à l'association ?</summary>
+        <p>Oui, exactement au même taux : 10 % de son montant hors taxes. C'est loin d'être anecdotique. Une succession entre plusieurs héritiers, un divorce, une donation à préparer ou un bien à déclarer à l'IFI n'aboutissent pas forcément à une vente — souvent, l'adhérent a seulement besoin d'un rapport écrit, daté et motivé, pour que le partage se fasse sur une base incontestable. Dans ce cas, il n'y a pas de transaction, mais l'association est créditée tout de même. C'est une situation bien plus fréquente qu'on ne le croit dans une association un peu ancienne, où beaucoup d'adhérents ont des parents âgés.</p>
+      </details>
+      <details>
+        <summary>Et si un adhérent achète au lieu de vendre ?</summary>
+        <p>Le mécanisme est identique. Un adhérent qui me confie un mandat de recherche pour trouver son futur logement ouvre le même droit à reversement qu'un adhérent qui vend, calculé de la même façon et versé au même moment. C'est important pour les associations dont les membres sont jeunes : on achète souvent avant d'avoir quelque chose à vendre.</p>
+      </details>
+      <details>
+        <summary>La convention nous engage-t-elle dans la durée ?</summary>
+        <p>Non. Aucune durée minimale, aucun volume à atteindre, aucune pénalité. Vous pouvez y mettre fin quand vous le souhaitez, par simple courrier ou courriel, sans avoir à vous justifier. Les opérations déjà engagées à cette date restent naturellement dues à l'association.</p>
+      </details>
+      <details>
+        <summary>Sommes-nous tenus de ne recommander que vous ?</summary>
+        <p>Non, il n'y a aucune exclusivité. Vous restez libres de citer d'autres professionnels, et vos adhérents restent évidemment libres de choisir qui ils veulent — y compris de vendre sans agence. Une association ne doit à ses membres aucune contrainte de ce genre, et je ne vous en demanderai pas.</p>
+      </details>
+      <details>
+        <summary>Comment justifier cette ressource en assemblée générale ?</summary>
+        <p>Avec le justificatif remis à chaque versement, qui indique la date de l'acte, la base retenue et le calcul appliqué. Beaucoup d'associations choisissent d'aller plus loin et d'annoncer publiquement le total de l'année : c'est un bon argument auprès des adhérents, parce que cela montre concrètement que leur projet personnel a servi au collectif. Sur le traitement comptable et fiscal de cette ressource, voyez la section « Le cadre » : je vous encourage à le valider avec votre expert-comptable ou votre fédération.</p>
+      </details>
+      <details>
+        <summary>Que se passe-t-il si la vente échoue ?</summary>
+        <p>Rien n'est dû par personne. L'adhérent ne me règle aucun honoraire si son bien ne se vend pas ou si son acquisition n'aboutit pas — pas de frais de dossier, pas de frais de photos, pas de frais de publicité — et l'association ne reçoit évidemment rien. Le risque de l'échec reste entièrement de mon côté, comme il doit l'être.</p>
+      </details>
+      <details>
+        <summary>Et si un adhérent possède un bien hors Île-de-France ?</summary>
+        <p>J'interviens sur les huit départements franciliens. Pour un bien situé ailleurs, je le dis franchement plutôt que d'accepter une mission que je ne pourrais pas mener correctement, et j'oriente l'adhérent vers un confrère de sa région lorsque c'est possible. Votre association n'y gagnera rien ce jour-là, mais votre adhérent sera bien conseillé — ce qui est, pour vous, l'essentiel.</p>
+      </details>
+      <details>
+        <summary>Combien de temps faut-il pour mettre cela en place ?</summary>
+        <p>Une semaine suffit : un échange, une convention d'une page, puis les supports prêts à diffuser. Il n'y a ni dossier à instruire, ni plateforme à ouvrir, ni compte à créer. Beaucoup de bureaux calent le premier échange juste avant leur assemblée générale, pour pouvoir l'annoncer aux adhérents dans la foulée.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARTENARIAT ================= -->
+<section class="section alt" id="partenariat">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Devenir association partenaire</p>
+      <h2>Parlons-en vingt minutes</h2>
+      <p>Dites-moi simplement qui vous êtes, et je vous adresse la proposition écrite ainsi que le modèle de convention, présentables en réunion de bureau. Aucun engagement, aucune relance commerciale.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-item">
+          <p class="label">Téléphone</p>
+          <a class="value" href="tel:+33660989292">06 60 98 92 92</a>
+        </div>
+        <div class="info-item">
+          <p class="label">E-mail</p>
+          <a class="value" href="mailto:contact@idf.immo">contact@idf.immo</a>
+        </div>
+        <div class="info-item">
+          <p class="label">Zone d'intervention</p>
+          <p class="value">Toute l'Île-de-France</p>
+        </div>
+        <div class="info-item">
+          <p class="label">Disponibilité</p>
+          <p class="value">Sur rendez-vous, 7j/7</p>
+        </div>
+      </div>
+      <form id="form-asso" class="reveal">
+        <div class="grid2">
+          <div class="field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="field">
+            <label for="association">Nom de l'association</label>
+            <input type="text" id="association" name="association" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="tel">Téléphone <span style="font-weight:400;color:var(--mousse)">(facultatif)</span></label>
+            <input type="tel" id="tel" name="tel" autocomplete="tel">
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="field">
+            <label for="role">Vous êtes</label>
+            <select id="role" name="role">
+              <option>Président(e)</option>
+              <option>Trésorier(ère)</option>
+              <option>Secrétaire</option>
+              <option>Membre du bureau</option>
+              <option>Bénévole</option>
+              <option>Adhérent(e)</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="adherents">Nombre d'adhérents</label>
+            <select id="adherents" name="adherents">
+              <option>Moins de 50</option>
+              <option>50 à 200</option>
+              <option>200 à 500</option>
+              <option>Plus de 500</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="type">Type d'association</label>
+          <select id="type" name="type">
+            <option>Club sportif</option>
+            <option>Association culturelle</option>
+            <option>Parents d'élèves</option>
+            <option>Anciens élèves ou réseau</option>
+            <option>Amicale ou comité des fêtes</option>
+            <option>Association caritative ou sociale</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Votre demande <span style="font-weight:400;color:var(--mousse)">(facultatif)</span></label>
+          <textarea id="message" name="message" placeholder="Une question, un point à éclaircir, la date de votre prochaine réunion de bureau ou de votre assemblée générale…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Recevoir la proposition</button>
+        <p class="form-note">Ce formulaire ouvre votre messagerie : aucune donnée n'est stockée sur le site.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PIED DE PAGE ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div>
+        <p class="brand">associations<span class="dot">.</span>idf<span class="dot">.</span>immo</p>
+        <p style="margin-top:.4rem;max-width:38ch">Quand un adhérent vend ou cherche son logement, son association reçoit 10 % des honoraires hors taxes.</p>
+      </div>
+      <ul class="foot-nav">
+        <li><a href="#pourquoi">Pourquoi</a></li>
+        <li><a href="#principe">Le principe</a></li>
+        <li><a href="#calcul">Ce que ça rapporte</a></li>
+        <li><a href="#adherents">Vos adhérents</a></li>
+        <li><a href="#role">Rôle de l'association</a></li>
+        <li><a href="#cadre">Le cadre</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#partenariat">Devenir partenaire</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>© <span id="annee">2026</span> associations.idf.immo — Marie-Céline Etave, conseillère indépendante en immobilier et expert en valeur vénale, Île-de-France.</p>
+      <p>Marie-Céline ETAVE (entreprise individuelle), agent commercial en immobilier auprès de BSK Immobilier, immatriculée au RSAC de Nanterre (92000) sous le numéro 431 897 958 00051. Carte professionnelle BSK Immobilier n° CP 3101 2018 000 030 369 (CCI de Toulouse, 20/04/2024). Site hébergé par GitHub, Inc. (GitHub Pages). <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>.</p>
+      <p>Les informations de ce site sont générales et ne constituent ni un conseil juridique, ni un conseil comptable, ni un conseil fiscal personnalisé. Les simulations de reversement sont indicatives et ne valent pas offre contractuelle : seule la convention de partenariat signée fait foi.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Navigation : fond au défilement
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+// Révélation au défilement
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, {threshold: .12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Simulateur : 10 % des honoraires hors taxes reversés à l'association.
+// Les honoraires sont saisis en TTC (usage du métier) ; TVA 20 %.
+const PART_ASSO = 0.10;   // part reversée à l'association
+const TVA = 1.20;         // taux de TVA appliqué aux honoraires d'agence
+const prix = document.getElementById('prix');
+const taux = document.getElementById('taux');
+const ventes = document.getElementById('ventes');
+const eur = n => Math.round(n).toLocaleString('fr-FR') + ' €';
+function majSimu(){
+  const p = Number(prix.value);
+  const t = Number(taux.value);
+  const n = Number(ventes.value);
+  const ttc = p * t / 100;
+  const ht = ttc / TVA;
+  const don = ht * PART_ASSO;
+  document.getElementById('prix-val').textContent = eur(p);
+  document.getElementById('ventes-val').textContent = n;
+  document.getElementById('out-ttc').textContent = eur(ttc);
+  document.getElementById('out-ht').textContent = eur(ht);
+  document.getElementById('out-don').textContent = eur(don);
+  document.getElementById('out-annee').textContent = eur(don * n);
+}
+prix.addEventListener('input', majSimu);
+taux.addEventListener('change', majSimu);
+ventes.addEventListener('input', majSimu);
+majSimu();
+
+// Formulaire → ouvre la messagerie (mailto), aucune donnée stockée
+document.getElementById('form-asso').addEventListener('submit', e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const sujet = encodeURIComponent('Partenariat association — ' + (v('association') || 'demande via associations.idf.immo'));
+  const corps = encodeURIComponent(
+    'Nom : ' + v('nom') + '\n' +
+    'E-mail : ' + v('email') + '\n' +
+    'Association : ' + (v('association') || '—') + '\n' +
+    'Téléphone : ' + (v('tel') || '—') + '\n' +
+    'Fonction : ' + v('role') + '\n' +
+    'Nombre d’adhérents : ' + v('adherents') + '\n' +
+    'Type d’association : ' + v('type') + '\n\n' +
+    'Demande :\n' + (v('message') || '—') + '\n\n' +
+    '— Envoyé depuis associations.idf.immo'
+  );
+  window.location.href = 'mailto:contact@idf.immo?subject=' + sujet + '&body=' + corps;
+});
+
+// Année courante
+document.getElementById('annee').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
