@@ -12,14 +12,21 @@ l'association).
 
 | Ce qui se passe | Ce que reçoit l'association |
 |---|---|
-| Un adhérent confie un **mandat de vente**, et la vente est actée | **10 % des honoraires d'agence hors taxes**, versés à la signature de l'acte authentique |
-| Un adhérent confie un **mandat de recherche**, et l'acquisition aboutit | **10 % des honoraires d'agence hors taxes**, versés à la signature de l'acte authentique |
-| Un adhérent commande une **expertise en valeur vénale** | **10 % du montant hors taxes de l'expertise**, versés après remise et règlement du rapport — **même sans vente** |
+| Un adhérent confie un **mandat de vente**, et la vente est actée | **10 % des honoraires nets**, versés à la signature de l'acte authentique |
+| Un adhérent confie un **mandat de recherche**, et l'acquisition aboutit | **10 % des honoraires nets**, versés à la signature de l'acte authentique |
+| Un adhérent commande une **expertise en valeur vénale** | **10 % des honoraires nets** de la mission, versés après remise et règlement du rapport — **même sans vente** |
 
-**Base de calcul confirmée par Marie-Céline (8 août 2026) : les honoraires
-d'agence hors taxes, et la même règle s'applique à l'expertise en valeur
-vénale.** Les trois volets ouvrent droit au reversement ; ne jamais réduire le
+**Assiette confirmée par Marie-Céline (8 août 2026) : les honoraires NETS
+hors taxes qu'elle perçoit réellement**, c'est-à-dire après déduction de la TVA
+**et** de la quote-part revenant au réseau mandant (BSK). **Ce ne sont pas les
+honoraires d'agence bruts facturés au client** — ne jamais réécrire le site en
+ce sens, l'écart est d'environ un quart et il a déjà fallu corriger une première
+version. La même règle vaut pour les trois volets ; ne jamais réduire le
 dispositif à la seule transaction.
+
+La convention de partenariat (document Word, hors dépôt) reprend cette assiette
+à son article 5.2 : **le site et la convention doivent toujours dire la même
+chose.** Toute évolution de l'un impose de vérifier l'autre.
 
 Points non négociables du discours, à ne jamais contredire :
 
