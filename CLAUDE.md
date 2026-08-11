@@ -57,7 +57,9 @@ modifier un autre dépôt depuis celui-ci.**
   estimateur en ligne. Grand public. Bleu.
 - **cse.idf.immo** — offre aux comités d'entreprise (CSE), Île-de-France. Bleu.
 - **associations.idf.immo** — ce site : partenariat avec les associations loi
-  1901, reversement de 10 %. Vert / terracotta.
+  1901, reversement de 10 %. **Prune, corail et jaune doré sur fond crème**, avec
+  une skyline illustrée sous une guirlande de fête. Aucune image externe : toutes
+  les illustrations sont des SVG inline, qui reprennent les variables de couleur.
 
 Pas d'actu immo ici, pas d'estimateur de prix au m², pas de contenu « comité
 d'entreprise », pas de contenu « associations » sur les autres sites.
@@ -73,6 +75,8 @@ d'entreprise », pas de contenu « associations » sur les autres sites.
   des bureaux, formulaire de demande.
 - `mentions-legales.html` — mentions légales, RGPD, portée du partenariat et du
   simulateur.
+- `marie-celine-etave.jpg` — portrait affiché section « Votre interlocutrice ».
+  Seul fichier image du dépôt ; voir la règle 6 ci-dessous.
 - `CNAME` — domaine personnalisé (`associations.idf.immo`), ne pas toucher.
 - `sitemap.xml` / `robots.txt` — référencement. **Quand le contenu d'une page
   publiée change, mettre sa balise `<lastmod>` à la date du jour (AAAA-MM-JJ).**
@@ -97,11 +101,17 @@ d'entreprise », pas de contenu « associations » sur les autres sites.
 5. **Règle de vocabulaire commune à la famille idf.immo** : ne pas écrire
    « minimum » ni « sans minimum » dans le texte visible. La promesse se formule
    en positif.
-6. **Aucune donnée personnelle dans le dépôt** (le dépôt est public). Les
+6. **Portrait de Marie-Céline.** Le fichier `marie-celine-etave.jpg`, à la
+   racine, est le portrait affiché dans la section « Votre interlocutrice ».
+   C'est une publication **volontaire** de Marie-Céline : ne pas le retirer au
+   motif que le dépôt est public. S'il est absent, la page retombe
+   automatiquement sur le monogramme « MCE » — c'est le comportement prévu, pas
+   un bug.
+7. **Aucune autre donnée personnelle dans le dépôt** (le dépôt est public). Les
    formulaires restent en `mailto:` ; rien n'est stocké côté site. Ne jamais
    ajouter de nom d'association, d'adhérent ou de coordonnée dans le dépôt.
-7. **Ne jamais contacter qui que ce soit.**
-8. Avant tout commit : vérifier l'équilibre des balises HTML des pages modifiées
+8. **Ne jamais contacter qui que ce soit.**
+9. Avant tout commit : vérifier l'équilibre des balises HTML des pages modifiées
    (python `html.parser`).
 
 ## Contact — règle stricte

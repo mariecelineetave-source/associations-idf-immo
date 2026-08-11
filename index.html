@@ -309,8 +309,11 @@ h3{font-size:1.35rem;font-weight:600}
 
 /* ============ À propos ============ */
 .apropos{display:grid;grid-template-columns:300px 1fr;gap:4rem;align-items:center}
-.portrait{aspect-ratio:4/5;background:var(--buis);border-radius:4px;display:flex;align-items:center;justify-content:center;position:relative}
-.portrait::before{content:"";position:absolute;inset:14px;border:1px solid rgba(251,246,239,.35);border-radius:2px}
+.portrait{aspect-ratio:4/5;background:var(--buis);border-radius:4px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.portrait::before{content:"";position:absolute;inset:14px;border:1px solid rgba(251,246,239,.35);border-radius:2px;z-index:1}
+/* La photo recouvre le monogramme dès qu'elle est présente dans le dépôt.
+   Si le fichier manque, le script la retire et le monogramme reparaît. */
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%;z-index:2}
 .monogram{font-family:"Newsreader",serif;font-size:3.8rem;font-weight:500;color:var(--paille);font-style:italic}
 .apropos-txt h2{margin-bottom:1.2rem}
 .apropos-txt p{color:var(--texte);margin-bottom:1rem;max-width:58ch}
@@ -835,9 +838,14 @@ footer{background:var(--ombre);color:rgba(251,246,239,.75);padding-block:3.5rem 
 <!-- ================= L'INTERLOCUTRICE ================= -->
 <section class="section alt" id="interlocutrice">
   <div class="container apropos">
-    <!-- Remplacer ce bloc par une photo : <img src="photo.jpg" alt="Marie-Céline Etave"> -->
-    <div class="portrait reveal" role="img" aria-label="Monogramme de Marie-Céline Etave">
-      <span class="monogram">MCE</span>
+    <!-- Portrait : déposer à la racine du dépôt un fichier nommé exactement
+         marie-celine-etave.jpg. Tant qu'il est absent, le monogramme s'affiche. -->
+    <div class="portrait reveal">
+      <img src="marie-celine-etave.jpg"
+           alt="Portrait de Marie-Céline Etave, conseillère en immobilier et expert en valeur vénale"
+           width="640" height="800" loading="lazy" decoding="async"
+           onerror="this.remove()">
+      <span class="monogram" aria-hidden="true">MCE</span>
     </div>
     <div class="apropos-txt reveal">
       <p class="eyebrow">Votre interlocutrice</p>
