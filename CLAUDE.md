@@ -71,6 +71,22 @@ les « réaligner » sur les autres sites sans revérifier les contrastes.
 Les trois sites sont désormais bleus : c'est assumé, c'est une famille. Ce qui
 doit rester distinct, c'est le **contenu**, jamais la couleur.
 
+**Couleurs chaudes : usage strictement réservé.** Deux exceptions au bleu, toutes
+deux voulues par Marie-Céline (11 août 2026) :
+
+- `--fete-jaune`, `--fete-rouge`, `--fete-vert`, `--fete-orange` — **uniquement
+  pour les fanions des trois guirlandes** (toits du héros, frise du bandeau,
+  vignette « Amicales et comités des fêtes »). Une guirlande monochrome n'est pas
+  une guirlande.
+- `--dore:#F5B841` — **uniquement pour le sceau « 10 % »** du héros, dont c'est
+  ce qui assure la visibilité (contraste 7,7 contre le ciel marine, contre 2,4
+  quand le disque était bleu).
+
+**Ne jamais employer ces teintes ailleurs** : titres, boutons, liens, encadrés,
+fonds. Diluées dans la page, elles cessent d'être une touche de fête et abîment
+le sérieux du bleu. Et ne pas les fusionner entre elles : le doré du sceau est
+volontairement plus chaud que le jaune des fanions.
+
 Ce qui appartient en propre à ce site : la skyline illustrée sous une guirlande
 de fête, le sceau « 10 % », les six vignettes par famille d'associations et la
 frise. Aucune image externe : tout est en SVG inline et reprend les variables de
