@@ -78,13 +78,20 @@ deux voulues par Marie-Céline (11 août 2026) :
   pour les fanions des trois guirlandes** (toits du héros, frise du bandeau,
   vignette « Amicales et comités des fêtes »). Une guirlande monochrome n'est pas
   une guirlande.
-- `--dore:#F5B841` — **uniquement pour le sceau « 10 % »** du héros, dont c'est
-  ce qui assure la visibilité (contraste 7,7 contre le ciel marine, contre 2,4
-  quand le disque était bleu).
+- `--dore:#F5B841` — le fil chaud qui parcourt la page, étendu le 12 août 2026 à
+  la demande de Marie-Céline (« un peu plus gai ») : sceau « 10 % », sur-titre et
+  chiffre du héros, tiret au-dessus de chaque sur-titre de section, point des
+  logos, filet de l'encadré sombre et de la barre expertise, liseré de cartes,
+  pastilles paires des étapes, bouton de la bande, monogramme du portrait.
 
-**Ne jamais employer ces teintes ailleurs** : titres, boutons, liens, encadrés,
-fonds. Diluées dans la page, elles cessent d'être une touche de fête et abîment
-le sérieux du bleu. Et ne pas les fusionner entre elles : le doré du sceau est
+**Règle de contraste, impérative.** Le doré ne passe en **texte** que sur les
+fonds sombres : `--ombre` (7,7) et, pour du grand texte seulement, `--buis`
+(3,9). **Jamais de doré en texte sur fond clair** — il tombe à 1,6 et devient
+illisible. Sur fond clair, il ne sert qu'en aplat, filet ou bordure. Une petite
+capitale en doré sur `--buis` a déjà dû être annulée pour cette raison.
+
+Les couleurs de fanions, elles, restent **strictement** cantonnées aux
+guirlandes. Ne pas les fusionner avec le doré : le doré du sceau est
 volontairement plus chaud que le jaune des fanions.
 
 Ce qui appartient en propre à ce site : la skyline illustrée sous une guirlande
