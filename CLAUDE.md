@@ -57,9 +57,24 @@ modifier un autre dépôt depuis celui-ci.**
   estimateur en ligne. Grand public. Bleu.
 - **cse.idf.immo** — offre aux comités d'entreprise (CSE), Île-de-France. Bleu.
 - **associations.idf.immo** — ce site : partenariat avec les associations loi
-  1901, reversement de 10 %. **Prune, corail et jaune doré sur fond crème**, avec
-  une skyline illustrée sous une guirlande de fête. Aucune image externe : toutes
-  les illustrations sont des SVG inline, qui reprennent les variables de couleur.
+  1901, reversement de 10 %. Bleu.
+
+**Palette : le bleu de la famille `.immo`**, aligné sur antony.immo à la demande
+de Marie-Céline (11 août 2026) après un essai en prune et corail, jugé trop peu
+classique. Valeurs : `--sable:#EBF2F9`, `--craie:#F7FAFD`, `--parterre:#DCE8F4`,
+`--buis:#1C5A9E`, `--ombre:#0E2E52`, `--brique:#1668B5` (accent),
+`--paille:#B7DCF8` (accent clair sur fonds sombres), `--or:#0C7350`.
+Les accents `--brique` et `--or` sont **volontairement plus foncés** que ceux
+d'antony.immo et de cse.idf.immo, pour tenir le seuil de contraste 4.5 : ne pas
+les « réaligner » sur les autres sites sans revérifier les contrastes.
+
+Les trois sites sont désormais bleus : c'est assumé, c'est une famille. Ce qui
+doit rester distinct, c'est le **contenu**, jamais la couleur.
+
+Ce qui appartient en propre à ce site : la skyline illustrée sous une guirlande
+de fête, le sceau « 10 % », les six vignettes par famille d'associations et la
+frise. Aucune image externe : tout est en SVG inline et reprend les variables de
+couleur, donc **un changement de palette suffit à faire suivre les dessins**.
 
 Pas d'actu immo ici, pas d'estimateur de prix au m², pas de contenu « comité
 d'entreprise », pas de contenu « associations » sur les autres sites.
