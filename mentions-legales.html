@@ -39,7 +39,10 @@ h2{font-size:1.5rem;color:var(--buis);margin:2.6rem 0 1rem}
 
 /* Contenu */
 main{padding-block:1rem 2rem}
-main p{margin-top:.8rem;color:var(--texte)}
+/* Justification « à la Word » : marges alignées, dernière ligne au fer à
+   gauche, aucun mot coupé. */
+main p{margin-top:.8rem;color:var(--texte);text-align:justify;text-align-last:left;text-justify:inter-word;hyphens:none;-webkit-hyphens:none}
+main li{text-align:justify;text-align-last:left;hyphens:none;-webkit-hyphens:none}
 main ul{margin:.8rem 0 .8rem 1.2rem;color:var(--texte)}
 main li{margin-top:.35rem}
 .maj{font-size:.85rem;color:var(--mousse);margin-top:2.4rem;border-top:1px solid var(--ligne);padding-top:1.4rem}
