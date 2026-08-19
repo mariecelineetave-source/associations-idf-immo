@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partager une opportunité — associations.idf.immo</title>
+<meta name="description" content="Un adhérent envisage de vendre ou d'acheter ? Transmettez l'information en une minute : 10 % des honoraires nets reversés à votre association.">
+<link rel="canonical" href="https://associations.idf.immo/partager.html">
+<meta name="theme-color" content="#0E2E52">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Partager une opportunité — associations.idf.immo">
+<meta property="og:description" content="10 % des honoraires nets reversés à votre association, sans qu'elle avance quoi que ce soit.">
+<meta property="og:url" content="https://associations.idf.immo/partager.html">
+<meta property="og:locale" content="fr_FR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Jetons repris à l'identique de associations.idf.immo — index.html n'est pas touché. */
+:root{
+  --sable:#EBF2F9; --craie:#F7FAFD; --parterre:#DCE8F4;
+  --buis:#1C5A9E; --ombre:#0E2E52; --brique:#1668B5; --brique-fonce:#12558F;
+  --paille:#B7DCF8; --encre:#12263C; --mousse:#4C6B8A; --ligne:#C5D6E6;
+  --dore:#F5B841; --or:#0C7350; --or-clair:#E4F4EC; --texte:#33465C;
+  --r:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Inter",system-ui,-apple-system,sans-serif;background:var(--sable);
+  color:var(--texte);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;line-height:1.14;
+  letter-spacing:-.012em;color:var(--encre)}
+a{color:var(--brique-fonce)}
+.wrap{width:min(740px,100% - 2.4rem);margin-inline:auto}
+:focus-visible{outline:3px solid var(--brique);outline-offset:3px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.entete{background:var(--ombre);color:var(--sable)}
+.entete .dedans{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1rem 0;width:min(740px,100% - 2.4rem);margin-inline:auto}
+.brand{font-family:"Newsreader",serif;font-size:1.28rem;font-weight:600;color:var(--sable);
+  letter-spacing:.01em;text-decoration:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1.4rem;border-radius:100px;border:0;cursor:pointer;
+  font-family:"Inter",sans-serif;font-weight:600;font-size:.98rem;text-decoration:none;
+  transition:background .18s ease}
+.btn-p{background:var(--brique);color:#fff}
+.btn-p:hover{background:var(--brique-fonce)}
+.btn-s{background:rgba(255,255,255,.12);color:var(--sable);border:1px solid rgba(255,255,255,.3)}
+.btn-c{background:#fff;color:var(--encre);border:1px solid var(--ligne)}
+.btn-sm{padding:.5rem .95rem;font-size:.86rem}
+.btn-xl{padding:1.05rem 1.6rem;font-size:1.06rem;width:100%}
+.btn:disabled{opacity:.55;cursor:default}
+
+.tete{padding:2.4rem 0 1.8rem}
+.oeil{display:inline-block;background:var(--or-clair);color:var(--or);padding:.35rem .9rem;
+  border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;margin-bottom:.9rem}
+.tete h1{font-size:clamp(1.9rem,6vw,2.7rem)}
+.tete p{margin-top:.8rem;color:var(--mousse)}
+.rappel{background:var(--or-clair);border-left:4px solid var(--or);border-radius:0 var(--r) var(--r) 0;
+  padding:1rem 1.2rem;margin-top:1.4rem;font-size:.95rem}
+.rappel b{color:var(--or)}
+
+form{padding-bottom:4rem}
+fieldset{border:1px solid var(--ligne);background:var(--craie);border-radius:var(--r);
+  padding:1.5rem 1.3rem;margin-bottom:1.1rem}
+legend{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:1.3rem;
+  padding:0 .5rem;color:var(--encre)}
+.aide{color:var(--mousse);font-size:.92rem;margin:.3rem 0 1.2rem}
+label.ch{display:block;margin-bottom:1.05rem}
+label.ch>span{display:block;font-weight:600;font-size:.95rem;margin-bottom:.35rem;color:var(--encre)}
+label.ch em{display:block;font-style:normal;color:var(--mousse);font-size:.85rem;
+  font-weight:400;margin-bottom:.4rem}
+input[type=text],input[type=tel],input[type=email],select,textarea{
+  width:100%;font:inherit;font-size:1rem;padding:.8rem .95rem;border-radius:10px;
+  border:1px solid var(--ligne);background:#fff;color:var(--encre)}
+input::placeholder,textarea::placeholder{color:#9BB0C6}
+textarea{min-height:92px;resize:vertical;line-height:1.5}
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 1rem}
+
+.coche{display:flex;gap:.75rem;align-items:flex-start;background:#fff;
+  border:1px solid var(--ligne);border-radius:10px;padding:.85rem 1rem;margin-bottom:.7rem;cursor:pointer}
+.coche input{margin-top:.25rem;width:19px;height:19px;flex:none;accent-color:var(--brique)}
+.coche b{display:block;color:var(--encre)}
+.coche em{font-style:normal;color:var(--mousse);font-size:.86rem}
+.coche.on{border-color:var(--brique);background:var(--parterre)}
+
+.liste-ban{list-style:none;margin:.4rem 0 0;padding:0;border:1px solid var(--ligne);
+  border-radius:10px;overflow:hidden;background:#fff}
+.liste-ban li{padding:.7rem .95rem;cursor:pointer;font-size:.94rem;border-top:1px solid var(--ligne)}
+.liste-ban li:first-child{border-top:0}
+.liste-ban li:hover{background:var(--parterre)}
+
+.err{color:#B3261E;font-size:.88rem;font-weight:600;margin-top:.35rem;display:none}
+.err.on{display:block}
+.msg{border-radius:10px;padding:1rem 1.1rem;margin-bottom:1.1rem;font-size:.95rem;display:none}
+.msg.on{display:block}
+.msg.ko{background:#FCEBE9;border:1px solid #B3261E;color:#8C1D18}
+
+.fin{text-align:center;padding:3rem 0 4rem;display:none}
+.fin.on{display:block}
+.fin h2{font-size:clamp(1.8rem,6vw,2.4rem);margin-bottom:.7rem}
+.fin p{color:var(--mousse);margin-bottom:1.3rem}
+.ref{display:inline-block;background:var(--or-clair);border:1px dashed var(--or);
+  border-radius:10px;padding:.7rem 1.2rem;font-weight:700;color:var(--or);margin-bottom:1.3rem}
+
+.pied{background:var(--ombre);color:var(--paille);padding:1.6rem 0;font-size:.88rem;margin-top:2rem}
+.pied a{color:var(--paille);text-decoration:underline;margin-right:1.1rem}
+</style>
+</head>
+<body>
+
+<header class="entete">
+  <div class="dedans">
+    <a class="brand" href="/">associations.idf.immo</a>
+    <a class="btn btn-s btn-sm" href="/">Retour</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <section class="tete">
+    <span class="oeil">Une minute, pas plus</span>
+    <h1>Partager une opportunité</h1>
+    <p>Un adhérent envisage de vendre son bien, d'en chercher un, ou a besoin d'une expertise&nbsp;? Transmettez l'information ici. L'association n'a rien d'autre à faire.</p>
+    <div class="rappel">
+      <b>10 % des honoraires nets</b> sont reversés à l'association à la signature de l'acte — et pour une expertise en valeur vénale, dès la remise et le règlement du rapport, <b>même sans vente</b>. L'adhérent ne paie aucun surcoût.
+    </div>
+  </section>
+
+  <div class="msg ko" id="echec"></div>
+
+  <form id="opp" novalidate>
+
+    <fieldset>
+      <legend>L'association</legend>
+      <p class="aide">Ces coordonnées servent à vous tenir au courant et à établir le reversement. Elles ne servent à rien d'autre.</p>
+      <label class="ch"><span>Nom de l'association</span>
+        <input type="text" id="asso" placeholder="Club sportif de Massy"></label>
+      <div class="duo">
+        <label class="ch"><span>Votre prénom</span>
+          <input type="text" id="prenom" autocomplete="given-name" placeholder="Jean"></label>
+        <label class="ch"><span>Votre nom</span>
+          <input type="text" id="nom" autocomplete="family-name" placeholder="Petit"></label>
+      </div>
+      <div class="duo">
+        <label class="ch"><span>Votre rôle</span>
+          <select id="role">
+            <option>Président(e)</option>
+            <option>Trésorier(ère)</option>
+            <option>Secrétaire</option>
+            <option>Membre du bureau</option>
+            <option>Bénévole</option>
+            <option>Adhérent(e)</option>
+            <option>Autre</option>
+          </select></label>
+        <label class="ch"><span>Votre téléphone</span>
+          <input type="tel" id="tel" autocomplete="tel" placeholder="06 12 34 56 78"></label>
+      </div>
+      <label class="ch"><span>Votre e-mail</span>
+        <em>C'est là que vous recevrez l'accusé de réception, puis le suivi.</em>
+        <input type="email" id="email" autocomplete="email" placeholder="bureau@association.fr"></label>
+      <p class="err" id="e-asso"></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Le besoin</legend>
+      <p class="aide">Si vous n'êtes sûr de rien, transmettez quand même&nbsp;: qualifier l'information, c'est notre travail.</p>
+      <label class="ch"><span>De quoi s'agit-il&nbsp;?</span>
+        <select id="besoin">
+          <option value="vente">Un adhérent envisage de vendre</option>
+          <option value="recherche">Un adhérent cherche à acheter</option>
+          <option value="expertise">Un adhérent a besoin d'une expertise en valeur vénale</option>
+          <option value="autre">Je ne sais pas encore</option>
+        </select></label>
+      <label class="ch"><span>Adresse du bien</span>
+        <em>Commencez à taper, puis choisissez dans la liste.</em>
+        <input type="text" id="adresse" autocomplete="off" placeholder="12 rue des Rabats, Antony"></label>
+      <ul class="liste-ban" id="suggestions" hidden></ul>
+      <p class="err" id="e-adresse"></p>
+      <div class="duo">
+        <label class="ch"><span>Type de bien</span>
+          <select id="type">
+            <option value="">Je ne sais pas</option>
+            <option>Appartement</option>
+            <option>Maison</option>
+            <option>Studio</option>
+            <option>Terrain</option>
+            <option>Local ou autre</option>
+          </select></label>
+        <label class="ch"><span>Étage, bâtiment <em style="display:inline">(facultatif)</em></span>
+          <input type="text" id="precision" placeholder="Bât. A, 3e étage"></label>
+      </div>
+      <label class="ch"><span>Ce que vous savez</span>
+        <em>Une succession, un déménagement, une date envisagée…</em>
+        <textarea id="details" placeholder="Succession en cours, ils souhaitent vendre avant l'été."></textarea></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>L'adhérent concerné</legend>
+      <p class="aide">Sans son nom et son numéro, nous ne pouvons rien faire — et le reversement n'est pas dû. Demandez-lui son accord avant&nbsp;: « l'association a une conseillère immobilière partenaire, je peux lui donner votre numéro&nbsp;? »</p>
+      <div class="duo">
+        <label class="ch"><span>Son nom</span>
+          <input type="text" id="p-nom" placeholder="Mme Durand"></label>
+        <label class="ch"><span>Son téléphone</span>
+          <input type="tel" id="p-tel" placeholder="06 11 22 33 44"></label>
+      </div>
+      <p class="err" id="e-adherent"></p>
+
+      <label class="coche" id="l-accord">
+        <input type="checkbox" id="accord">
+        <span><b>J'ai recueilli son accord</b>
+        <em>Il sait que nous allons l'appeler. C'est la condition du reversement, et c'est ce qui fait que l'appel se passe bien.</em></span>
+      </label>
+      <p class="err" id="e-accord"></p>
+
+      <label class="ch" style="margin-top:1.2rem"><span>Peut-on citer l'association&nbsp;?</span></label>
+      <label class="coche"><input type="radio" name="citation" value="oui" id="cite-oui">
+        <span><b>Oui, vous pouvez la citer</b>
+        <em>« C'est le bureau du Club sportif de Massy qui m'a donné votre numéro, avec votre accord. »</em></span></label>
+      <label class="coche"><input type="radio" name="citation" value="non" id="cite-non">
+        <span><b>Non, restez discrète</b>
+        <em>« J'ai eu votre numéro par une personne qui m'a dit que vous étiez d'accord. » Le reversement est le même.</em></span></label>
+      <p class="err" id="e-citation"></p>
+
+      <label class="coche" style="margin-top:1rem"><input type="checkbox" id="numero">
+        <span><b>Je lui ai aussi donné le 06 60 98 92 92</b>
+        <em>S'il appelle de lui-même, le rapprochement est automatique et le reversement reste dû.</em></span></label>
+    </fieldset>
+
+    <button class="btn btn-p btn-xl" type="submit" id="envoyer">Transmettre cette opportunité</button>
+    <p class="aide" style="text-align:center;margin-top:.9rem">Vous recevrez un e-mail de confirmation avec votre numéro d'opportunité.</p>
+  </form>
+
+  <section class="fin" id="fin">
+    <h2>C'est transmis.</h2>
+    <div class="ref" id="ref"></div>
+    <p>Marie-Céline vous répond en moins de 24 heures. Vous recevrez un e-mail de confirmation — regardez aussi dans les indésirables.</p>
+    <a class="btn btn-c" href="/">Revenir à l'accueil</a>
+  </section>
+
+</div>
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <a href="/">associations.idf.immo</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="tel:+33660989292">06 60 98 92 92</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var $ = function(id){ return document.getElementById(id); };
+  var DEPTS = ["75","77","78","91","92","93","94","95"];
+  var choisie = null;
+
+  /* ---------- autocomplétion d'adresse (Base Adresse Nationale) ---------- */
+  var minuteur, liste = $("suggestions");
+  $("adresse").addEventListener("input", function(){
+    choisie = null;
+    var q = this.value.trim();
+    clearTimeout(minuteur);
+    if (q.length < 4){ liste.hidden = true; return; }
+    minuteur = setTimeout(function(){
+      fetch("https://api-adresse.data.gouv.fr/search/?limit=5&q=" + encodeURIComponent(q))
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var f = (d && d.features) || [];
+          if (!f.length){ liste.hidden = true; return; }
+          liste.innerHTML = f.map(function(x, i){
+            return '<li data-i="' + i + '">' + x.properties.label + "</li>";
+          }).join("");
+          liste.hidden = false;
+          liste.querySelectorAll("li").forEach(function(li){
+            li.addEventListener("click", function(){
+              choisie = f[li.dataset.i].properties;
+              $("adresse").value = choisie.label;
+              liste.hidden = true;
+              verifieZone();
+            });
+          });
+        })
+        .catch(function(){ liste.hidden = true; });
+    }, 250);
+  });
+
+  function verifieZone(){
+    var e = $("e-adresse");
+    if (choisie && DEPTS.indexOf(String(choisie.postcode).slice(0,2)) === -1){
+      e.textContent = "Cette adresse ne semble pas être en Île-de-France. Le partenariat ne couvre que les huit départements franciliens.";
+      e.classList.add("on");
+      return false;
+    }
+    e.classList.remove("on");
+    return true;
+  }
+
+  function dire(id, texte){
+    var e = $(id);
+    e.textContent = texte || "";
+    e.classList.toggle("on", !!texte);
+    return !texte;
+  }
+
+  function valide(){
+    var ok = true;
+    ok = dire("e-asso",
+      (!$("asso").value.trim() || !$("prenom").value.trim() || !$("tel").value.trim() ||
+       !$("email").value.trim() || $("email").value.indexOf("@") < 1)
+        ? "Il nous faut le nom de l'association, votre prénom, votre téléphone et un e-mail valide." : "") && ok;
+    ok = dire("e-adresse", !$("adresse").value.trim() ? "Indiquez l'adresse du bien." : "") && ok;
+    if (ok) ok = verifieZone();
+    ok = dire("e-adherent",
+      (!$("p-nom").value.trim() || !$("p-tel").value.trim())
+        ? "Le nom et le téléphone de l'adhérent sont indispensables : sans eux, nous ne pouvons pas l'appeler." : "") && ok;
+    ok = dire("e-accord", !$("accord").checked
+        ? "Cochez la case : il faut avoir recueilli l'accord de l'adhérent." : "") && ok;
+    ok = dire("e-citation", !($("cite-oui").checked || $("cite-non").checked)
+        ? "Dites-nous si nous pouvons citer l'association." : "") && ok;
+    return ok;
+  }
+
+  ["asso","prenom","tel","email","adresse","p-nom","p-tel"].forEach(function(id){
+    $(id).addEventListener("input", function(){
+      if (document.querySelector(".err.on")) valide();
+    });
+  });
+  $("accord").addEventListener("change", function(){
+    $("l-accord").classList.toggle("on", this.checked);
+    if ($("e-accord").classList.contains("on")) valide();
+  });
+
+  $("opp").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    $("echec").classList.remove("on");
+    if (!valide()){
+      var p = document.querySelector(".err.on");
+      if (p) p.scrollIntoView({behavior:"smooth", block:"center"});
+      return;
+    }
+    var b = $("envoyer");
+    b.disabled = true; b.textContent = "Envoi…";
+
+    var ref = "ASO-" + new Date().getFullYear() + "-" +
+              String(Math.floor(Math.random()*9000)+1000);
+    var besoins = { vente:"Vente", recherche:"Recherche", expertise:"Expertise en valeur vénale", autre:"À préciser" };
+
+    var d = new FormData();
+    d.append("_subject", "Opportunité association " + ref + " — " + $("adresse").value.trim());
+    d.append("_captcha", "false");
+    d.append("_template", "table");
+    d.append("email", $("email").value.trim());
+    d.append("Référence", ref);
+    d.append("Réseau", "associations.idf.immo");
+    d.append("Association", $("asso").value.trim());
+    d.append("Interlocuteur", $("prenom").value.trim() + " " + $("nom").value.trim());
+    d.append("Rôle", $("role").value);
+    d.append("Téléphone", $("tel").value.trim());
+    d.append("E-mail", $("email").value.trim());
+    d.append("Nature du besoin", besoins[$("besoin").value] || "");
+    d.append("Adresse du bien", $("adresse").value.trim());
+    d.append("Identifiant BAN", choisie ? choisie.id : "");
+    d.append("Commune", choisie ? choisie.city : "");
+    d.append("Code postal", choisie ? choisie.postcode : "");
+    d.append("Type de bien", $("type").value);
+    d.append("Précision", $("precision").value.trim());
+    d.append("Ce que sait l'association", $("details").value.trim());
+    d.append("Adhérent", $("p-nom").value.trim());
+    d.append("Téléphone adhérent", $("p-tel").value.trim());
+    d.append("Accord recueilli", "oui");
+    d.append("Peut-on citer l'association", $("cite-oui").checked ? "OUI" : "NON — rester discrète");
+    d.append("A donné notre numéro", $("numero").checked ? "oui" : "non");
+    d.append("_autoresponse",
+      "Bonjour,\n\n" +
+      "Votre opportunité est bien reçue. Elle porte le numéro " + ref + ".\n\n" +
+      "Je vous réponds en moins de 24 heures : je vous dirai si je donne suite, et pourquoi. " +
+      "Ensuite je m'occupe de tout — l'association n'a plus rien à faire.\n\n" +
+      "Pour rappel : 10 % des honoraires nets sont reversés à l'association à la signature de " +
+      "l'acte authentique, et dès le règlement du rapport pour une expertise en valeur vénale, " +
+      "même sans vente. L'adhérent ne paie aucun surcoût, et l'association n'avance rien.\n\n" +
+      "Une question ? Appelez-moi au 06 60 98 92 92.\n\n" +
+      "Marie-Céline Etave\nConseillère en immobilier — Île-de-France\nassociations.idf.immo");
+
+    fetch("https://formsubmit.co/ajax/contact@idf.immo", {
+      method:"POST", headers:{ "Accept":"application/json" }, body:d
+    })
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(){
+      $("opp").style.display = "none";
+      document.querySelector(".tete").style.display = "none";
+      $("ref").textContent = ref;
+      $("fin").classList.add("on");
+      window.scrollTo(0,0);
+    })
+    .catch(function(){
+      b.disabled = false; b.textContent = "Transmettre cette opportunité";
+      var m = $("echec");
+      m.innerHTML = "<strong>L'envoi n'a pas fonctionné.</strong> Rien n'est perdu : " +
+        "réessayez dans un instant, ou appelez Marie-Céline au " +
+        '<a href="tel:+33660989292">06 60 98 92 92</a>. Elle enregistrera l\'opportunité avec vous, ' +
+        "et la date de votre appel comptera de la même façon.";
+      m.classList.add("on");
+      m.scrollIntoView({behavior:"smooth", block:"center"});
+    });
+  });
+})();
+</script>
+</body>
+</html>

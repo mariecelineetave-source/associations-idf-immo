@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espace association — associations.idf.immo</title>
+<meta name="description" content="Suivez vos opportunités et les reversements à votre association. Connexion par lien e-mail, sans mot de passe.">
+<link rel="canonical" href="https://associations.idf.immo/mon-espace.html">
+<meta name="theme-color" content="#0E2E52">
+<meta name="robots" content="noindex,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Jetons repris à l'identique de associations.idf.immo — index.html n'est pas touché. */
+:root{
+  --sable:#EBF2F9; --craie:#F7FAFD; --parterre:#DCE8F4;
+  --buis:#1C5A9E; --ombre:#0E2E52; --brique:#1668B5; --brique-fonce:#12558F;
+  --paille:#B7DCF8; --encre:#12263C; --mousse:#4C6B8A; --ligne:#C5D6E6;
+  --or:#0C7350; --or-clair:#E4F4EC; --texte:#33465C; --r:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Inter",system-ui,-apple-system,sans-serif;background:var(--sable);
+  color:var(--texte);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;line-height:1.14;
+  letter-spacing:-.012em;color:var(--encre)}
+a{color:var(--brique-fonce)}
+.wrap{width:min(740px,100% - 2.4rem);margin-inline:auto}
+:focus-visible{outline:3px solid var(--brique);outline-offset:3px;border-radius:6px}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.entete{background:var(--ombre);color:var(--sable)}
+.entete .dedans{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1rem 0;width:min(740px,100% - 2.4rem);margin-inline:auto}
+.brand{font-family:"Newsreader",serif;font-size:1.28rem;font-weight:600;color:var(--sable);
+  text-decoration:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1.4rem;border-radius:100px;border:0;cursor:pointer;
+  font-family:"Inter",sans-serif;font-weight:600;font-size:.98rem;text-decoration:none}
+.btn-p{background:var(--brique);color:#fff}
+.btn-p:hover{background:var(--brique-fonce)}
+.btn-s{background:rgba(255,255,255,.12);color:var(--sable);border:1px solid rgba(255,255,255,.3)}
+.btn-sm{padding:.5rem .95rem;font-size:.86rem}
+.btn:disabled{opacity:.55;cursor:default}
+
+.connexion{max-width:440px;margin:6vh auto 4rem;background:var(--craie);
+  border:1px solid var(--ligne);border-radius:var(--r);padding:2rem 1.6rem}
+.connexion h1{font-size:1.7rem;margin-bottom:.5rem}
+.connexion p{color:var(--mousse);font-size:.95rem;margin-bottom:1.2rem}
+input[type=email]{width:100%;font:inherit;font-size:1rem;padding:.8rem .95rem;border-radius:10px;
+  border:1px solid var(--ligne);background:#fff;color:var(--encre);margin-bottom:.8rem}
+input::placeholder{color:#9BB0C6}
+.connexion .btn{width:100%}
+.msg{border-radius:10px;padding:1rem 1.1rem;margin-top:1rem;font-size:.94rem;display:none}
+.msg.on{display:block}
+.msg.ko{background:#FCEBE9;border:1px solid #B3261E;color:#8C1D18}
+.msg.ok{background:var(--or-clair);border:1px solid var(--or);color:var(--or)}
+.chargement{text-align:center;color:var(--mousse);padding:5rem 1rem}
+
+.salut{padding:2rem 0 1.6rem}
+.salut h1{font-size:clamp(1.8rem,6vw,2.5rem)}
+.salut .qui{color:var(--mousse);margin-top:.3rem}
+.compteurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;margin-top:1.4rem}
+.compteur{background:var(--craie);border:1px solid var(--ligne);border-radius:var(--r);padding:1.05rem}
+.compteur .n{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:1.8rem;
+  color:var(--buis);line-height:1.1}
+.compteur.or .n{color:var(--or)}
+.compteur .l{font-size:.76rem;color:var(--mousse);text-transform:uppercase;letter-spacing:.09em;font-weight:600}
+
+h2.sec{font-size:1.35rem;margin:2.2rem 0 1rem}
+.oppo{background:var(--craie);border:1px solid var(--ligne);border-radius:var(--r);
+  padding:1.15rem 1.1rem;margin-bottom:.9rem}
+.oppo .haut{display:flex;justify-content:space-between;gap:.8rem;align-items:flex-start;flex-wrap:wrap}
+.oppo .ref{font-weight:700;color:var(--encre)}
+.oppo .lieu{font-size:.95rem;color:var(--encre);margin-top:.1rem}
+.oppo .meta{color:var(--mousse);font-size:.84rem;margin-top:.25rem}
+.etat{font-size:.74rem;font-weight:700;padding:.28rem .75rem;border-radius:100px;white-space:nowrap}
+.e-encours{background:var(--parterre);color:var(--buis)}
+.e-mandat{background:#E4EEFB;color:var(--brique-fonce)}
+.e-vendue{background:var(--or-clair);color:var(--or)}
+.e-close{background:#ECEFF3;color:var(--mousse)}
+
+.jalons{list-style:none;margin:1rem 0 0;padding:0}
+.jalons li{padding-left:1.4rem;position:relative;padding-bottom:.85rem;
+  border-left:2px solid var(--ligne);margin-left:.35rem}
+.jalons li:last-child{border-left-color:transparent;padding-bottom:0}
+.jalons li::before{content:"";position:absolute;left:-.42rem;top:.4rem;width:.72rem;height:.72rem;
+  border-radius:50%;background:var(--ligne);border:2px solid var(--craie)}
+.jalons li.fait::before{background:var(--brique)}
+.jalons li.prime::before{background:var(--or)}
+.jalons .quoi{font-size:.92rem;font-weight:600;color:var(--encre)}
+.jalons .quand{font-size:.78rem;color:var(--mousse)}
+.jalons .mot{font-size:.9rem;color:var(--mousse);font-style:italic;margin-top:.2rem}
+
+.prime-carte{background:var(--or-clair);border:1px solid var(--or);border-radius:var(--r);
+  padding:1.05rem;margin-bottom:.8rem;display:flex;justify-content:space-between;
+  align-items:center;gap:1rem;flex-wrap:wrap}
+.prime-carte .montant{font-family:"Newsreader",Georgia,serif;font-weight:600;
+  font-size:1.6rem;color:var(--or)}
+.prime-carte .quoi{color:var(--mousse);font-size:.9rem}
+.fiscal{background:var(--craie);border:1px dashed var(--ligne);border-radius:var(--r);
+  padding:1.05rem;font-size:.9rem;color:var(--mousse);margin-top:1rem}
+.fiscal b{color:var(--encre)}
+.vide{background:var(--craie);border:1px dashed var(--ligne);border-radius:var(--r);
+  padding:2rem 1.2rem;text-align:center;color:var(--mousse)}
+.pied{background:var(--ombre);color:var(--paille);padding:1.6rem 0;font-size:.88rem;margin-top:2.6rem}
+.pied a{color:var(--paille);text-decoration:underline;margin-right:1.1rem}
+.deconnexion{background:none;border:0;color:var(--mousse);text-decoration:underline;
+  cursor:pointer;font:inherit;font-size:.9rem;padding:0;margin-top:1.6rem}
+</style>
+</head>
+<body>
+
+<header class="entete">
+  <div class="dedans">
+    <a class="brand" href="/">associations.idf.immo</a>
+    <a class="btn btn-s btn-sm" href="partager.html">Partager</a>
+  </div>
+</header>
+
+<!-- ══════ NON CONNECTÉ ══════ -->
+<section id="ecran-connexion" hidden>
+  <div class="wrap">
+    <div class="connexion">
+      <h1>Vos opportunités</h1>
+      <p>Indiquez l'adresse e-mail avec laquelle vous avez transmis. Nous vous envoyons un lien de connexion — il n'y a pas de mot de passe à retenir.</p>
+      <form id="form-connexion" novalidate>
+        <input type="email" id="email" placeholder="bureau@association.fr" autocomplete="email" required>
+        <button class="btn btn-p" type="submit" id="envoyer">Recevoir mon lien</button>
+      </form>
+      <div class="msg" id="message"></div>
+      <p style="color:var(--mousse);font-size:.88rem;margin-top:1.3rem">Un souci&nbsp;? Appelez le <a href="tel:+33660989292">06 60 98 92 92</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CHARGEMENT ══════ -->
+<section id="ecran-attente"><p class="chargement">Un instant…</p></section>
+
+<!-- ══════ CONNECTÉ ══════ -->
+<main id="ecran-espace" hidden>
+  <div class="wrap">
+    <div class="salut">
+      <h1 id="salut">Bonjour</h1>
+      <p class="qui" id="sous-salut"></p>
+      <div class="compteurs">
+        <div class="compteur"><div class="n" id="n-total">—</div><div class="l">transmises</div></div>
+        <div class="compteur"><div class="n" id="n-cours">—</div><div class="l">en cours</div></div>
+        <div class="compteur or"><div class="n" id="n-primes">—</div><div class="l">reversés</div></div>
+      </div>
+    </div>
+
+    <h2 class="sec">Nos opportunités</h2>
+    <div id="liste"></div>
+
+    <div id="bloc-primes" hidden>
+      <h2 class="sec">Les reversements</h2>
+      <div id="liste-primes"></div>
+      <div class="fiscal" id="fiscal"></div>
+    </div>
+
+    <p style="color:var(--mousse);font-size:.9rem;margin-top:2rem">
+      Une question sur l'une de ces opportunités&nbsp;?
+      <a href="tel:+33660989292">06 60 98 92 92</a></p>
+    <button class="deconnexion" id="deconnexion">Me déconnecter</button>
+  </div>
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <a href="/">associations.idf.immo</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
+</footer>
+
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/+esm";
+
+/* Ces deux valeurs sont publiques par conception. Ce qui protège les données,
+   c'est la base : une association ne lit que ses propres opportunités. */
+const base = createClient(
+  "https://uiciolavnalimrjlpesx.supabase.co",
+  "sb_publishable_rCVYAzc9PyppEfijDMdHzg_C--mKXj1"
+);
+
+const $ = (id) => document.getElementById(id);
+const montre = (id) => ["ecran-connexion","ecran-attente","ecran-espace"]
+  .forEach(e => $(e).hidden = (e !== id));
+
+const ETATS = {
+  recue:                ["Reçue",               "e-encours"],
+  qualifiee:            ["Qualifiée",           "e-encours"],
+  contact_en_cours:     ["Contact en cours",    "e-encours"],
+  projet_immobilier:    ["Mandat signé",        "e-mandat"],
+  expertise_remise:     ["Expertise remise",    "e-mandat"],
+  vente_realisee:       ["Vente réalisée",      "e-vendue"],
+  prime_versee:         ["Reversement effectué","e-vendue"],
+  deja_partagee:        ["Déjà transmise",      "e-close"],
+  deja_en_portefeuille: ["Déjà connu",          "e-close"],
+  hors_zone:            ["Hors Île-de-France",  "e-close"],
+  sans_suite:           ["Sans suite",          "e-close"],
+  vendu_ailleurs:       ["Vendu ailleurs",      "e-close"]
+};
+const PARCOURS = ["recue","qualifiee","contact_en_cours","projet_immobilier","vente_realisee","prime_versee"];
+const EN_COURS = ["recue","qualifiee","contact_en_cours","projet_immobilier","expertise_remise"];
+
+const ec = (s) => String(s == null ? "" : s)
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+function date(v, heure){
+  if (!v) return "";
+  const o = { day:"numeric", month:"long", year:"numeric" };
+  if (heure){ o.hour = "2-digit"; o.minute = "2-digit"; }
+  return new Date(v).toLocaleDateString("fr-FR", o);
+}
+const euros = (n) => Number(n || 0).toLocaleString("fr-FR") + " €";
+
+$("form-connexion").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = $("email").value.trim(), msg = $("message"), b = $("envoyer");
+  if (!email || email.indexOf("@") < 1){
+    msg.className = "msg ko on"; msg.textContent = "Indiquez une adresse e-mail valide."; return;
+  }
+  b.disabled = true; b.textContent = "Envoi…";
+  const { error } = await base.auth.signInWithOtp({
+    email, options:{ emailRedirectTo: location.origin + "/mon-espace.html" }
+  });
+  b.disabled = false; b.textContent = "Recevoir mon lien";
+  if (error){
+    msg.className = "msg ko on";
+    msg.textContent = "L'envoi n'a pas fonctionné. Réessayez dans un instant, ou appelez le 06 60 98 92 92.";
+    return;
+  }
+  msg.className = "msg ok on";
+  msg.innerHTML = "<strong>C'est envoyé.</strong> Ouvrez le message reçu à <strong>" +
+    ec(email) + "</strong> et cliquez sur le lien. S'il n'arrive pas, regardez dans les indésirables.";
+});
+
+$("deconnexion").addEventListener("click", async () => {
+  await base.auth.signOut();
+  location.href = "mon-espace.html";
+});
+
+async function ouvrir(session){
+  const u = session.user;
+
+  let { data: fiche } = await base.from("prescripteurs").select("*").eq("id", u.id).maybeSingle();
+  if (!fiche){
+    const { data: reseau } = await base.from("reseaux").select("id").eq("code","associations").maybeSingle();
+    const { data } = await base.from("prescripteurs").insert({
+      id: u.id, email: u.email, prenom: (u.email || "").split("@")[0],
+      categorie: "association", reseau_id: reseau ? reseau.id : null
+    }).select().maybeSingle();
+    fiche = data || { prenom:(u.email||"").split("@")[0], email:u.email };
+  }
+
+  $("salut").textContent = "Bonjour " + (fiche.organisation || fiche.prenom || "");
+  $("sous-salut").textContent = [fiche.role_dans_organisation, fiche.email].filter(Boolean).join(" · ");
+
+  const [{ data: opportunites }, { data: primes }] = await Promise.all([
+    base.from("opportunites").select("*").order("partagee_le",{ ascending:false }),
+    base.from("primes").select("*").order("cree_le",{ ascending:false })
+  ]);
+  const opps = opportunites || [], prs = primes || [];
+  const versees = prs.filter(p => p.statut === "versee");
+  const total = versees.reduce((s,p) => s + (p.montant_euros || 0), 0);
+
+  $("n-total").textContent = String(opps.length);
+  $("n-cours").textContent = String(opps.filter(o => EN_COURS.includes(o.statut)).length);
+  $("n-primes").textContent = euros(total);
+
+  const liste = $("liste");
+  if (!opps.length){
+    liste.innerHTML = '<div class="vide"><p>Aucune opportunité transmise pour l\'instant.</p>' +
+      '<p style="margin-top:1rem"><a class="btn btn-p" href="partager.html">Partager une opportunité</a></p></div>';
+  } else {
+    liste.innerHTML = "";
+    for (const o of opps) liste.appendChild(await carte(o));
+  }
+
+  if (prs.length){
+    $("bloc-primes").hidden = false;
+    $("liste-primes").innerHTML = prs.map(p => {
+      const quoi = p.statut === "versee" ? "Versé le " + date(p.versee_le)
+                 : p.statut === "a_verser" ? "À verser"
+                 : "À venir si l'opération aboutit";
+      return '<div class="prime-carte"><span class="montant">' + euros(p.montant_euros) +
+             '</span><span class="quoi">' + ec(quoi) + "</span></div>";
+    }).join("");
+    const annee = new Date().getFullYear();
+    const cumul = versees.filter(p => p.versee_le &&
+      new Date(p.versee_le).getFullYear() === annee).reduce((s,p) => s + p.montant_euros, 0);
+    $("fiscal").innerHTML = "<b>Cumul reversé en " + annee + " : " + euros(cumul) + ".</b> " +
+      "Ces sommes sont versées à l'association, sur son compte. Leur traitement comptable " +
+      "relève de son régime propre — parlez-en à votre trésorier.";
+  }
+
+  montre("ecran-espace");
+}
+
+async function carte(o){
+  const d = document.createElement("div");
+  d.className = "oppo";
+  const [libelle, classe] = ETATS[o.statut] || [o.statut, "e-close"];
+  const meta = [o.type_bien, o.commune, "transmise le " + date(o.partagee_le)]
+    .filter(Boolean).join(" · ");
+
+  d.innerHTML =
+    '<div class="haut"><div><div class="ref">' + ec(o.reference) + "</div>" +
+    '<div class="lieu">' + ec(o.adresse_saisie) + "</div>" +
+    '<div class="meta">' + ec(meta) + "</div></div>" +
+    '<span class="etat ' + classe + '">' + ec(libelle) + "</span></div>";
+
+  if (PARCOURS.includes(o.statut)){
+    const { data: evenements } = await base.from("evenements")
+      .select("*").eq("opportunite_id", o.id).order("cree_le",{ ascending:true });
+    const atteint = PARCOURS.indexOf(o.statut);
+    const ul = document.createElement("ul");
+    ul.className = "jalons";
+    ul.innerHTML = PARCOURS.map((etape, i) => {
+      const ev = (evenements || []).find(e => e.statut === etape);
+      const cls = i <= atteint ? (etape === "prime_versee" ? "prime" : "fait") : "";
+      return "<li" + (cls ? ' class="' + cls + '"' : "") + ">" +
+        '<div class="quoi">' + ec(ETATS[etape][0]) + "</div>" +
+        '<div class="quand">' + (ev ? ec(date(ev.cree_le, true)) : (i <= atteint ? "" : "à venir")) + "</div>" +
+        (ev && ev.message ? '<div class="mot">« ' + ec(ev.message) + " »</div>" : "") + "</li>";
+    }).join("");
+    d.appendChild(ul);
+  } else if (o.motif){
+    const m = document.createElement("div");
+    m.className = "meta";
+    m.style.marginTop = ".9rem";
+    m.textContent = "Motif : " + o.motif;
+    d.appendChild(m);
+  }
+
+  if (o.expire_le){
+    const e = document.createElement("div");
+    e.className = "meta";
+    e.style.marginTop = ".8rem";
+    e.textContent = "Enregistrée jusqu'au " + date(o.expire_le) + ".";
+    d.appendChild(e);
+  }
+  return d;
+}
+
+function rate(e){
+  console.error(e);
+  montre("ecran-connexion");
+  const msg = $("message");
+  msg.className = "msg ko on";
+  msg.textContent = "Vos opportunités n'ont pas pu être chargées. Réessayez, ou appelez le 06 60 98 92 92.";
+}
+
+base.auth.onAuthStateChange((_, session) => { if (session) ouvrir(session).catch(rate); });
+(async () => {
+  const { data:{ session } } = await base.auth.getSession();
+  if (session) ouvrir(session).catch(rate); else montre("ecran-connexion");
+})();
+</script>
+</body>
+</html>
